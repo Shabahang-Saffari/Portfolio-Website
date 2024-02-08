@@ -3,8 +3,7 @@
 @import "./functions";
 
 body {
-  background: $primary_color;
-  color: $secondary_color;
+  background: $primary_700;
   @include flex_center;
 
   // .my_header {
@@ -18,8 +17,13 @@ body {
 
 // ********* Theme Mode **********
 .light_mode {
-  @include theme_mode(true, $primary_color, $secondary_color);
+  @include theme_mode(true, $primary_700, $secondary_100);
 }
 .dark_mode {
-  @include theme_mode(false, $primary_color, $secondary_color);
+  @include theme_mode(false, $primary_700, $secondary_100);
+}
+
+// ******************
+div {
+  height: 100vh;
 }

@@ -1,5 +1,19 @@
+@import "./variables";
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: $primary_200;
 }
+
+html {
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+// ul {
+//   list-style-type: none;
+//   padding: 0;
+// }

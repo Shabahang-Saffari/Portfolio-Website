@@ -1,10 +1,34 @@
 // ********* Colors *********
 
-$primary_color: #111111;
-$secondary_color: #c4c4c4;
-$font_color: #ffffff;
+$primary_100: #ececec;
+$primary_200: #c4c4c4;
+$primary_300: #989898;
+$primary_400: #6b6b6b;
+$primary_500: #3e3e3e;
+$primary_600: #282828;
+$primary_700: #111111;
 
-// ********* Fonts *********
+$secondary_100: #ff7a27;
+// $font_color: #ffffff;
+
+// ********* Fonts Sizes *********
+$tiny_font: 0.625rem;
+$xsmall_font: 0.75rem;
+$small_font: 0.875rem;
+$base_font: 1rem;
+$large_font: 1.375rem;
+$larger_font: 1.5rem;
+$xlarge_font: 1.75rem;
+$title_font: 2rem;
+$huge_font: 2.5rem;
+$xhuge_font: 3.75rem;
+
+$letter_spacing: 1px;
+$line_height: 1;
+// ********* Fonts Weights*********
 $regular_font: 400;
 $medium_font: 600;
 $bold_font: 800;
+// ********************************
+$transition: 0.3s ease-in-out all;
+$border_radius: 0.25rem;

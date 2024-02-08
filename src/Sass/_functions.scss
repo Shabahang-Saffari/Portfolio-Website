@@ -9,8 +9,8 @@
   @if $light-theme {
     background: lighten($background_color, 100%);
     color: darken($font_color, 100%);
-    transition: 300ms all ease-in-out;
+    transition: 300ms ease-in-out all;
   } @else {
-    transition: 300ms all ease-in-out;
+    transition: 300ms ease-in-out all;
   }
 }
