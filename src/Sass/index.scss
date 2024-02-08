@@ -1,0 +1,25 @@
+@import "./resets";
+@import "./variables";
+@import "./functions";
+
+body {
+  background: $primary_color;
+  color: $secondary_color;
+  @include flex_center;
+
+  // .my_header {
+  //   color: $secondary_color;
+
+  //   &:hover {
+  //     color: $primary_color;
+  //   }
+  // }
+}
+
+// ********* Theme Mode **********
+.light_mode {
+  @include theme_mode(true, $primary_color, $secondary_color);
+}
+.dark_mode {
+  @include theme_mode(false, $primary_color, $secondary_color);
+}

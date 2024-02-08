@@ -1,0 +1,16 @@
+@mixin flex_center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// *********** Theme Mode **************
+@mixin theme_mode($light-theme: true, $background_color, $font_color) {
+  @if $light-theme {
+    background: lighten($background_color, 100%);
+    color: darken($font_color, 100%);
+    transition: 300ms all ease-in-out;
+  } @else {
+    transition: 300ms all ease-in-out;
+  }
+}
