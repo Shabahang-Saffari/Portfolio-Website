@@ -23,7 +23,29 @@ body {
   @include theme_mode(false, $primary_700, $secondary_100);
 }
 
-// ******************
-div {
-  height: 100vh;
+// ************ Navbar ***************
+.nav_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 2;
+}
+.nav_content {
+  padding: 1rem 5rem;
+  width: 100%;
+  @include flex_center;
+  justify-content: space-between;
+
+  font-family: "Comfortaa", sans-serif;
+  font-size: $small_font;
+  color: $primary_200;
+}
+.logo {
+  font-size: $base_font;
+}
+
+// ************ Hero ***************
+.hero_wrapper {
+  margin-top: 5rem;
 }
