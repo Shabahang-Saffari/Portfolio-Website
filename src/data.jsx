@@ -14,26 +14,26 @@ export const inner_links = [
   },
   {
     id: 3,
-    url: "#projects",
+    href: "#projects",
     text: "projects",
   },
   {
-    id: 1,
-    url: "#contact",
+    id: 4,
+    href: "#contact",
     text: "contact",
   },
 ];
 
 export const social_links = [
   {
-    id: 1,
+    id: 5,
     name: "Linkedin",
     url: "https://www.linkedin.com/in/shabahang-saffari",
     icon: <FaLinkedin />,
   },
   {
-    id: 2,
-    name: "Github",
+    id: 6,
+    name: "GitHub",
     url: "https://www.github.com/Shabahang-Saffari",
     icon: <GrGithub />,
   },

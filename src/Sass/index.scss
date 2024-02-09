@@ -25,27 +25,71 @@ body {
 
 // ************ Navbar ***************
 .nav_wrapper {
+  height: 4rem;
+  width: 100vw;
+  z-index: 1;
+}
+.nav_content {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  z-index: 2;
-}
-.nav_content {
   padding: 1rem 5rem;
   width: 100%;
   @include flex_center;
   justify-content: space-between;
-
   font-family: "Comfortaa", sans-serif;
   font-size: $small_font;
+  text-transform: uppercase;
   color: $primary_200;
 }
+.availability_status {
+  flex: 1;
+}
 .logo {
+  flex: 1;
+  @include flex_center;
   font-size: $base_font;
+}
+.menu_btn {
+  flex: 1;
+  @include flex_center;
+  justify-content: right;
+  background: transparent;
+  border: none;
+  color: $primary_200;
+  font-size: $xlarge_font;
+}
+.nav_links {
+  flex: 1;
+  @include flex_center;
+  justify-content: space-between;
 }
 
 // ************ Hero ***************
 .hero_wrapper {
-  margin-top: 5rem;
+  min-height: calc(100vh - 4rem);
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
 }
+.hero_title {
+  font-family: "Noto Sans Thai", sans-serif;
+  height: 100%;
+  color: $primary_200;
+  font-size: 12vw;
+  transition: $transition;
+  &:hover {
+    color: $secondary_100;
+  }
+}
+// .hero_title::before {
+//   content: "";
+//   position: absolute;
+//   top: 45%;
+//   left: 25%;
+//   width: 50%;
+//   height: 25%;
+//   background: rgba(247, 153, 65, 0.568);
+//   transform: perspective(20rem) rotateX(60deg);
+//   filter: blur(5rem);
+// }
