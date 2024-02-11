@@ -6,11 +6,13 @@ const Navbar = () => {
     <nav className="nav_wrapper">
       <div className="nav_content">
         <div className="availability_status">Available to join your team</div>
-        <div className="logo">Night</div>
+        <div className="theme_mode">Night</div>
         {true ? (
-          <button className="menu_btn">
-            <LuPlus />
-          </button>
+          <div className="menu_btn_wrapper">
+            <button className="menu_btn">
+              <LuPlus />
+            </button>
+          </div>
         ) : (
           <Navlinks />
         )}

@@ -33,6 +33,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   padding: 1rem 5rem;
   width: 100%;
   @include flex_center;
@@ -45,20 +46,28 @@ body {
 .availability_status {
   flex: 1;
 }
-.logo {
+.theme_mode {
   flex: 1;
   @include flex_center;
   font-size: $base_font;
 }
-.menu_btn {
+.menu_btn_wrapper {
   flex: 1;
   @include flex_center;
   justify-content: right;
+}
+.menu_btn {
   background: transparent;
   border: none;
   color: $primary_200;
   font-size: $xlarge_font;
+  transition: $transition;
+  &:hover {
+    color: $secondary_100;
+    cursor: pointer;
+  }
 }
+
 .nav_links {
   flex: 1;
   @include flex_center;
@@ -71,15 +80,21 @@ body {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+  z-index: 0;
 }
 .hero_title {
   font-family: "Noto Sans Thai", sans-serif;
-  height: 100%;
-  color: $primary_200;
-  font-size: 12vw;
-  transition: $transition;
-  &:hover {
-    color: $secondary_100;
+
+  span {
+    color: $primary_200;
+    font-size: 12vw;
+    height: 100%;
+    transition: $transition;
+
+    &:hover {
+      color: $secondary_100;
+      filter: blur(0.2rem);
+    }
   }
 }
 // .hero_title::before {
