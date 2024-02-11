@@ -26,7 +26,7 @@ body {
 // ************ Navbar ***************
 .nav_wrapper {
   height: 4rem;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
 }
 .nav_content {
@@ -57,14 +57,29 @@ body {
   justify-content: right;
 }
 .menu_btn {
-  background: transparent;
-  border: none;
-  color: $primary_200;
-  font-size: $xlarge_font;
+  position: relative;
+  height: 0.15rem;
+  width: 1.35rem;
+  border-radius: 25px;
+  background: $primary_200;
   transition: $transition;
-  &:hover {
-    color: $secondary_100;
-    cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 0.15rem;
+    width: 1.35rem;
+    border-radius: 25px;
+    transform: rotate(90deg);
+    background: $primary_200;
+  }
+
+  &.close {
+    transform: rotate(-135deg);
+    &::before {
+      transform: rotate(90deg);
+    }
+    transition: $transition;
   }
 }
 
@@ -77,8 +92,7 @@ body {
 // ************ Hero ***************
 .hero_wrapper {
   min-height: calc(100vh - 4rem);
-  display: flex;
-  justify-content: center;
+  @include flex_center;
   text-transform: uppercase;
   z-index: 0;
 }
@@ -87,10 +101,10 @@ body {
 
   span {
     color: $primary_200;
-    font-size: 12vw;
+    font-size: 17vw;
     height: 100%;
     transition: $transition;
-
+    line-height: 20rem;
     &:hover {
       color: $secondary_100;
       filter: blur(0.2rem);

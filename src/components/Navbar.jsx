@@ -1,5 +1,5 @@
 import Navlinks from "./Navlinks";
-import { LuPlus } from "react-icons/lu";
+// import { LuPlus } from "react-icons/lu";
 
 const Navbar = () => {
   return (
@@ -9,9 +9,7 @@ const Navbar = () => {
         <div className="theme_mode">Night</div>
         {true ? (
           <div className="menu_btn_wrapper">
-            <button className="menu_btn">
-              <LuPlus />
-            </button>
+            <span className={true ? "menu_btn" : "menu_btn close"}></span>
           </div>
         ) : (
           <Navlinks />

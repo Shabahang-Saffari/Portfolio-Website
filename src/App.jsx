@@ -1,8 +1,8 @@
-import Navbar from "./Navbar";
-import Hero from "./Hero";
-import MyInfo from "./MyInfo";
-import Projects from "./Projects";
-import Project from "./Project";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import MyInfo from "./components/MyInfo";
+import Projects from "./components/Projects";
+import Project from "./components/Project";
 
 function App() {
   if (false) {
