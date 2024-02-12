@@ -1,6 +1,6 @@
 import { useReducer, useContext, createContext } from "react";
 import { LOADING, TOGGLE_NAV_MENU } from "./actions";
-import reducer from "./reduce";
+import reducer from "./reducer";
 
 // ************** Context API *******************
 const AppContext = createContext();
