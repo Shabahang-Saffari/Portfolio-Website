@@ -1,4 +1,5 @@
 import { inner_links, social_links } from "./data";
+
 const Navlinks = () => {
   return (
     <ul className="nav_links">

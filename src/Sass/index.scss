@@ -87,6 +87,10 @@ body {
   flex: 1;
   @include flex_center;
   justify-content: space-between;
+
+  a:visited {
+    color: $primary_200;
+  }
 }
 
 // ************ Hero ***************
