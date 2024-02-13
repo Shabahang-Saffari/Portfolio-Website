@@ -1,8 +1,38 @@
+@import "./resets";
+@import "./variables";
+@import "./functions";
+
 .my_cursor {
-  width: 50px;
-  height: 50px;
+  position: absolute;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  border: 1px solid white;
-  position: fixed;
+  background-color: $secondary_300;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
   z-index: 100;
+}
+.shadow {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background: $primary_200;
+  mix-blend-mode: difference;
+  opacity: 1;
+  border: none;
+  z-index: 99;
+  transition: 250ms ease-out;
+}
+
+.shadow.over {
+  background: #cafafe73;
+  /* mix-blend-mode: difference; */
+  transform: translate(-50%, -50%) scale(4);
+  border: 1px solid #d34420;
+  transition: transform 250ms ease-in-out, border 250ms ease-out;
 }
