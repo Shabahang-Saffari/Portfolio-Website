@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import MyInfo from "./components/MyInfo";
 import Projects from "./components/Projects";
 import Project from "./components/Project";
+import Cursor from "./components/Cursor";
 
 function App() {
   if (false) {
@@ -10,6 +11,7 @@ function App() {
   }
   return (
     <main>
+      <Cursor />
       <Navbar />
       <Hero />
       <MyInfo />
