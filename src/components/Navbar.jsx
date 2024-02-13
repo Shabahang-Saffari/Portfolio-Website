@@ -12,9 +12,11 @@ const Navbar = () => {
       <div className="nav_content">
         <div className="availability_status">Available to join your team</div>
         <div className="theme_mode">Night</div>
-        {nav_menu && <Navlinks />}
-        <div className="menu_btn_wrapper" onClick={nav_menu_btn_handler}>
-          <span className={nav_menu ? "menu_btn close" : "menu_btn"}></span>
+        <div className="navlinks_btn_wrapper" onClick={nav_menu_btn_handler}>
+          {nav_menu && <Navlinks />}
+          <div className="nav_btn_wrapper">
+            <span className={nav_menu ? "menu_btn close" : "menu_btn"}></span>
+          </div>
         </div>
       </div>
     </nav>
