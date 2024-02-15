@@ -4,15 +4,6 @@
 
 body {
   background: $primary_700;
-  // @include flex_center;
-
-  // .my_header {
-  //   color: $secondary_color;
-
-  //   &:hover {
-  //     color: $primary_color;
-  //   }
-  // }
 }
 
 // ********* Theme Mode **********
@@ -25,17 +16,19 @@ body {
 
 // ************ Navbar ***************
 .nav_wrapper {
-  height: 4rem;
-  width: 100%;
-  z-index: 1;
-}
-.nav_content {
   position: fixed;
   top: 0;
   left: 0;
+  height: 6rem;
+  width: 100%;
+  background: $primary_700;
   z-index: 1;
+  // border: 2px solid rgb(166, 255, 0) !important;
+}
+.nav_content {
   padding: 1rem 2rem;
   width: 100%;
+  height: 100%;
   @include flex_center;
   justify-content: space-between;
   font-family: "Comfortaa", sans-serif;
@@ -104,17 +97,19 @@ body {
 
 // ************ Hero ***************
 .hero_wrapper {
-  min-height: calc(100vh - 4rem);
+  overflow: hidden;
+  margin-top: 6rem;
+  height: calc(100vh - 6rem);
   @include flex_center;
   text-transform: uppercase;
-  z-index: 0;
+  // border: 2px solid rgb(10, 124, 253) !important;
 }
 .hero_title {
   font-family: "Noto Sans Thai", sans-serif;
-
+  padding: 7%;
   span {
     color: $primary_200;
-    font-size: 17vw;
+    font-size: 15vw;
     height: 100%;
     transition: $transition;
     line-height: 20rem;
@@ -127,11 +122,16 @@ body {
 // .hero_title::before {
 //   content: "";
 //   position: absolute;
-//   top: 45%;
-//   left: 25%;
-//   width: 50%;
-//   height: 25%;
-//   background: rgba(247, 153, 65, 0.568);
+//   top: 95%;
+//   left: 0%;
+//   width: 90%;
+//   height: 15%;
+//   background: $primary_200;
 //   transform: perspective(20rem) rotateX(60deg);
-//   filter: blur(5rem);
+//   filter: blur(3rem);
 // }
+
+.my_info {
+  height: calc(100vh - 4rem);
+  background: $primary_400;
+}

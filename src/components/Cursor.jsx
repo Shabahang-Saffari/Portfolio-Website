@@ -25,7 +25,7 @@ const Cursor = () => {
       <div className="my_cursor" style={cursorStyle}></div>
       <motion.div
         className="my_cursor shadow"
-        animate={{ x: position.x - 12.5, y: position.y - 12.5 }}
+        animate={{ x: position.x - 12.5, y: position.y - 109 }}
       ></motion.div>
     </div>
   );

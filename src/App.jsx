@@ -10,12 +10,12 @@ function App() {
     return <div className="loading">Loading</div>;
   }
   return (
-    <main>
+    <main className={true ? "dark_mode" : "light_mode"}>
       <Cursor />
       <Navbar />
       <Hero />
       <MyInfo />
-      <Projects />
+      {/* <Projects /> */}
     </main>
   );
 }

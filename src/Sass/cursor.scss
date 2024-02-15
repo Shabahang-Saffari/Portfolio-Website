@@ -3,7 +3,7 @@
 @import "./functions";
 
 .my_cursor {
-  position: absolute;
+  position: fixed;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -14,7 +14,7 @@
   z-index: 100;
 }
 .shadow {
-  position: absolute;
+  position: fixed;
   width: 25px;
   height: 25px;
   border-radius: 25px;
