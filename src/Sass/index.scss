@@ -98,6 +98,7 @@ body {
 // ************ Hero ***************
 .hero_wrapper {
   overflow: hidden;
+  scroll-snap-align: start;
   margin-top: 6rem;
   height: calc(100vh - 6rem);
   @include flex_center;
@@ -132,6 +133,7 @@ body {
 // }
 
 .my_info {
+  scroll-snap-align: start;
   height: calc(100vh - 4rem);
-  background: $primary_400;
+  background: $primary_300;
 }

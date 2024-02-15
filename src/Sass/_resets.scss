@@ -11,6 +11,9 @@
 
 html {
   font-size: 16px;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scroll-padding: 6rem;
 }
 a {
   text-decoration: none;

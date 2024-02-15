@@ -1,9 +1,13 @@
 import { inner_links, social_links } from "./data";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navlinks = () => {
   return (
-    <ul className="nav_links">
+    <motion.ul
+      className="nav_links"
+      exit={{ opacity: 0.4, y: 8, transition: { duration: 0.1 } }}
+      key={"nav_links"}
+    >
       {inner_links.map((link) => {
         return (
           <motion.li
@@ -40,7 +44,7 @@ const Navlinks = () => {
           </motion.li>
         );
       })}
-    </ul>
+    </motion.ul>
   );
 };
 export default Navlinks;
