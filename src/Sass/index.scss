@@ -99,6 +99,10 @@ body {
 .hero_wrapper {
   overflow: hidden;
   scroll-snap-align: start;
+  // scroll-snap-stop: always;
+  scroll-margin: 6rem;
+  scroll-behavior: smooth;
+
   margin-top: 6rem;
   height: calc(100vh - 6rem);
   @include flex_center;
@@ -134,6 +138,12 @@ body {
 
 .my_info {
   scroll-snap-align: start;
-  height: calc(100vh - 4rem);
-  background: $primary_300;
+  // scroll-snap-stop: always;
+  scroll-margin: 6rem;
+
+  height: calc(100vh - 6rem);
+
+  font-size: $xhuge_font;
+  color: $primary_200;
+  // border: 2px solid rgb(211, 226, 0) !important;
 }
