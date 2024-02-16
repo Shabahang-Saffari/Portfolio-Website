@@ -1,8 +1,8 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import MyInfo from "./components/MyInfo";
-import Project from "./components/Project";
-import Cursor from "./components/Cursor";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import AboutMe from "./components/About me/AboutMe";
+import Project from "./components/Project/Project";
+import Cursor from "./components/Cursor/Cursor";
 
 function App() {
   if (false) {
@@ -13,7 +13,7 @@ function App() {
       <Cursor />
       <Navbar />
       <Hero />
-      <MyInfo />
+      <AboutMe />
       <Project />
     </main>
   );

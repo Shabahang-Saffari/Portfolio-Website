@@ -3,6 +3,8 @@ import {
   TOGGLE_NAV_MENU,
   BTNS_HOVERING,
   BTNS_EXIT_HOVERING,
+  AVAILABLE_HOVERING,
+  EXIT_AVAILABLE_HOVERING,
 } from "./actions";
 
 const reducer = (state, action) => {
@@ -18,6 +20,12 @@ const reducer = (state, action) => {
 
     case BTNS_EXIT_HOVERING:
       return { ...state, btns_hover: false };
+
+    case AVAILABLE_HOVERING:
+      return { ...state, available_hover: true };
+
+    case EXIT_AVAILABLE_HOVERING:
+      return { ...state, available_hover: false };
 
     default:
       throw new Error(`Requested action type: ${action.type} not found!`);

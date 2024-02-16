@@ -1,6 +1,7 @@
-import { inner_links, social_links } from "./data";
+import { inner_links, social_links } from "../data";
 import { motion } from "framer-motion";
-import { useGlobalContext } from "../Context";
+import { useGlobalContext } from "../../Context";
+import "./navbar.scss";
 
 const Navlinks = () => {
   const { hover_btns, hover_btns_exit } = useGlobalContext();

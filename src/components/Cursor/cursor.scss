@@ -1,6 +1,6 @@
-@import "./resets";
-@import "./variables";
-@import "./functions";
+@import "../../Sass/resets";
+@import "../../Sass/variables";
+@import "../../Sass/functions";
 
 .my_cursor {
   position: fixed;
@@ -34,4 +34,11 @@
 
   // border: 1px solid #d34420;
   // transition: transform 250ms ease-in-out, border 250ms ease-out;
+}
+
+.rectangle {
+  width: 100px;
+  height: 15px;
+  border-radius: 5px;
+  background: $secondary_100;
 }

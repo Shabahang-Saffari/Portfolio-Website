@@ -1,5 +1,6 @@
 import { nanoid } from "nanoid";
 import { motion } from "framer-motion";
+import "./hero.scss";
 
 const hero_title = "WEB DEVELOPER";
 const hero_title_array = hero_title.split("");

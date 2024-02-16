@@ -4,6 +4,8 @@ import {
   TOGGLE_NAV_MENU,
   BTNS_HOVERING,
   BTNS_EXIT_HOVERING,
+  AVAILABLE_HOVERING,
+  EXIT_AVAILABLE_HOVERING,
 } from "./actions";
 import reducer from "./reducer";
 
@@ -14,6 +16,7 @@ const initialState = {
   loading: false,
   nav_menu: false,
   btns_hover: false,
+  available_hover: false,
 };
 
 export const AppProvider = ({ children }) => {
@@ -27,12 +30,22 @@ export const AppProvider = ({ children }) => {
     dispatch({ type: TOGGLE_NAV_MENU });
   };
 
+  // ****** Hovering on btns ********
   const hover_btns = () => {
     dispatch({ type: BTNS_HOVERING });
   };
 
   const hover_btns_exit = () => {
     dispatch({ type: BTNS_EXIT_HOVERING });
+  };
+
+  // ****** Hovering on Available Tag ********
+  const hover_on_available = () => {
+    dispatch({ type: AVAILABLE_HOVERING });
+  };
+
+  const exit_available_hover = () => {
+    dispatch({ type: EXIT_AVAILABLE_HOVERING });
   };
 
   return (
@@ -43,6 +56,8 @@ export const AppProvider = ({ children }) => {
         toggle_nav_menu,
         hover_btns,
         hover_btns_exit,
+        hover_on_available,
+        exit_available_hover,
       }}
     >
       {children};

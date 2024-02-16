@@ -1,0 +1,15 @@
+@import "../../Sass/resets";
+@import "../../Sass/variables";
+@import "../../Sass/functions";
+// ************ Project ***************
+
+.project {
+  scroll-snap-align: start;
+  scroll-margin: 6rem;
+
+  height: calc(100vh - 6rem);
+
+  font-size: $xhuge_font;
+  color: $primary_200;
+  // border: 2px solid rgb(211, 226, 0) !important;
+}
