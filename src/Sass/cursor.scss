@@ -30,9 +30,8 @@
 }
 
 .shadow.over {
-  background: #cafafe73;
-  /* mix-blend-mode: difference; */
-  transform: translate(-50%, -50%) scale(4);
-  border: 1px solid #d34420;
-  transition: transform 250ms ease-in-out, border 250ms ease-out;
+  background: $secondary_100;
+
+  // border: 1px solid #d34420;
+  // transition: transform 250ms ease-in-out, border 250ms ease-out;
 }

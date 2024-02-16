@@ -14,7 +14,7 @@ export const inner_links = [
   },
   {
     id: 3,
-    href: "#projects",
+    href: "#project",
     text: "projects",
   },
   {

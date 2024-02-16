@@ -1,7 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import MyInfo from "./components/MyInfo";
-import Projects from "./components/Projects";
 import Project from "./components/Project";
 import Cursor from "./components/Cursor";
 
@@ -10,12 +9,12 @@ function App() {
     return <div className="loading">Loading</div>;
   }
   return (
-    <main className={true ? "dark_mode" : "light_mode"}>
+    <main className={false ? "dark_mode" : "light_mode"}>
       <Cursor />
       <Navbar />
       <Hero />
       <MyInfo />
-      {/* <Projects /> */}
+      <Project />
     </main>
   );
 }

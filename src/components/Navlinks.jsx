@@ -1,7 +1,18 @@
 import { inner_links, social_links } from "./data";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+import { useGlobalContext } from "../Context";
 
 const Navlinks = () => {
+  const { hover_btns, hover_btns_exit } = useGlobalContext();
+
+  const links_cursor_hover_handler = () => {
+    hover_btns();
+  };
+
+  const links_cursor_exit_hover_handler = () => {
+    hover_btns_exit();
+  };
+
   return (
     <motion.ul
       className="nav_links"
@@ -21,7 +32,13 @@ const Navlinks = () => {
               textShadow: "0px 0px 8px rgb(255,255,255)",
             }}
           >
-            <a href={link.href}>{link.text}</a>
+            <a
+              href={link.href}
+              onMouseOver={links_cursor_hover_handler}
+              onMouseLeave={links_cursor_exit_hover_handler}
+            >
+              {link.text}
+            </a>
           </motion.li>
         );
       })}
@@ -38,7 +55,13 @@ const Navlinks = () => {
               textShadow: "0px 0px 8px rgb(255,255,255)",
             }}
           >
-            <a href={link.url}>{link.name}</a>
+            <a
+              href={link.url}
+              onMouseOver={links_cursor_hover_handler}
+              onMouseLeave={links_cursor_exit_hover_handler}
+            >
+              {link.name}
+            </a>
           </motion.li>
         );
       })}

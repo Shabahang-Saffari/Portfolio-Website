@@ -15,9 +15,16 @@ const Navbar = () => {
         <div className="navlinks_btn_wrapper">
           <AnimatePresence>{nav_menu && <Navlinks />}</AnimatePresence>
 
-          <div className="nav_btn_wrapper" onClick={nav_menu_btn_handler}>
+          <motion.div
+            className="nav_btn_wrapper"
+            onClick={nav_menu_btn_handler}
+            whileHover={{
+              scale: 1.4,
+              textShadow: "0px 8px 8px rgb(255,255,255)",
+            }}
+          >
             <span className={nav_menu ? "menu_btn close" : "menu_btn"}></span>
-          </div>
+          </motion.div>
         </div>
       </div>
     </nav>

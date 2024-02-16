@@ -8,10 +8,10 @@ body {
 
 // ********* Theme Mode **********
 .light_mode {
-  @include theme_mode(true, $primary_700, $secondary_100);
+  @include theme_mode(true, $primary_700, $primary_200);
 }
 .dark_mode {
-  @include theme_mode(false, $primary_700, $secondary_100);
+  @include theme_mode(false, $primary_700, $primary_200);
 }
 
 // ************ Navbar ***************
@@ -89,6 +89,10 @@ body {
   li {
     padding-right: 1.25rem;
     text-wrap: nowrap;
+    text-decoration: none;
+  }
+  a {
+    color: inherit;
   }
   a:hover {
     font-weight: $font_weight8;
@@ -142,6 +146,16 @@ body {
 .my_info {
   scroll-snap-align: start;
   // scroll-snap-stop: always;
+  scroll-margin: 6rem;
+
+  height: calc(100vh - 6rem);
+
+  font-size: $xhuge_font;
+  color: $primary_200;
+  // border: 2px solid rgb(211, 226, 0) !important;
+}
+.project {
+  scroll-snap-align: start;
   scroll-margin: 6rem;
 
   height: calc(100vh - 6rem);

@@ -1,3 +1,5 @@
+@import "./variables";
+
 @mixin flex_center() {
   display: flex;
   justify-content: center;
@@ -7,8 +9,9 @@
 // *********** Theme Mode **************
 @mixin theme_mode($light-theme: true, $background_color, $font_color) {
   @if $light-theme {
-    background: lighten($background_color, 100%);
-    color: darken($font_color, 100%);
+    // background: $primary_100;
+    // color: $primary_700;
+    $secondary_100: white;
     transition: 300ms ease-in-out all;
   } @else {
     transition: 300ms ease-in-out all;

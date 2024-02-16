@@ -10,10 +10,10 @@ const Hero = () => {
       <div className="hero_title_wrapper">
         <motion.div
           className="hero_title"
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 0.25, opacity: 1 }}
-          transition={{ type: "spring" }}
-          whileHover={{ scale: 1 }}
+          initial={{ scale: 0.95, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ type: "spring", stiffness: 150 }}
+          whileHover={{ scale: 1.1 }}
         >
           {hero_title_array.map((char) => {
             return <span key={nanoid()}>{char}</span>;
