@@ -7,13 +7,13 @@
 }
 
 // *********** Theme Mode **************
-@mixin theme_mode($light-theme: true, $background_color, $font_color) {
+@mixin theme_mode($light-theme: true) {
   @if $light-theme {
-    // background: $primary_100;
-    // color: $primary_700;
-    $secondary_100: white;
-    transition: 300ms ease-in-out all;
+    background: $primary_100;
+    color: $primary_400;
+
+    // transition: 300ms ease-in-out all;
   } @else {
-    transition: 300ms ease-in-out all;
+    // transition: 300ms ease-in-out all;
   }
 }

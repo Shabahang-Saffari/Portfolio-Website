@@ -12,6 +12,9 @@
   z-index: 1;
   // border: 2px solid rgb(166, 255, 0) !important;
 }
+.light_mode .nav_wrapper {
+  background: $primary_100;
+}
 .nav_content {
   padding: 1rem 2rem;
   width: 100%;
@@ -21,7 +24,6 @@
   font-family: "Comfortaa", sans-serif;
   font-size: $small_font;
   text-transform: uppercase;
-  color: $primary_200;
 }
 .available_status_wrapper {
   flex: 1;
@@ -75,6 +77,13 @@
   }
 }
 
+.light_mode .menu_btn {
+  background: $primary_400;
+  &::before {
+    background: $primary_400;
+  }
+}
+
 .nav_links {
   @include flex_center;
   justify-content: space-between;
@@ -89,8 +98,5 @@
   }
   a:hover {
     font-weight: $font_weight8;
-  }
-  a:visited {
-    color: $primary_200;
   }
 }
