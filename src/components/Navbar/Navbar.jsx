@@ -6,6 +6,7 @@ import "./navbar.scss";
 const Navbar = () => {
   const {
     nav_menu,
+    toggle_theme,
     toggle_nav_menu,
     hover_on_available,
     exit_available_hover,
@@ -13,6 +14,10 @@ const Navbar = () => {
 
   const nav_menu_btn_handler = () => {
     toggle_nav_menu();
+  };
+
+  const toggle_theme_handler = () => {
+    toggle_theme();
   };
 
   const cursor_hover_handler = () => {
@@ -40,7 +45,10 @@ const Navbar = () => {
           </motion.div>
         </div>
 
-        <div className="theme_mode">Night</div>
+        <div className="theme_mode_wrapper">
+          <div className="theme_mode"></div>
+          <p onClick={toggle_theme_handler}>Night</p>
+        </div>
         <div className="navlinks_btn_wrapper">
           <AnimatePresence>{nav_menu && <Navlinks />}</AnimatePresence>
 

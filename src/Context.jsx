@@ -1,6 +1,7 @@
 import { useReducer, useContext, createContext } from "react";
 import {
   LOADING,
+  TOGGLE_THEME,
   TOGGLE_NAV_MENU,
   BTNS_HOVERING,
   BTNS_EXIT_HOVERING,
@@ -14,6 +15,7 @@ const AppContext = createContext();
 
 const initialState = {
   loading: false,
+  dark_mode: false,
   nav_menu: false,
   btns_hover: false,
   available_hover: false,
@@ -24,6 +26,10 @@ export const AppProvider = ({ children }) => {
 
   const loading = () => {
     dispatch({ type: LOADING });
+  };
+
+  const toggle_theme = () => {
+    dispatch({ type: TOGGLE_THEME });
   };
 
   const toggle_nav_menu = () => {
@@ -53,6 +59,7 @@ export const AppProvider = ({ children }) => {
       value={{
         ...state,
         loading,
+        toggle_theme,
         toggle_nav_menu,
         hover_btns,
         hover_btns_exit,

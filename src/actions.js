@@ -1,4 +1,5 @@
 export const LOADING = "LOADING";
+export const TOGGLE_THEME = "TOGGLE_THEME";
 export const TOGGLE_NAV_MENU = "TOGGLE_NAV_MENU";
 export const BTNS_HOVERING = "BTNS_HOVERING";
 export const BTNS_EXIT_HOVERING = "BTNS_EXIT_HOVERING";

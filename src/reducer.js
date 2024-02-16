@@ -1,5 +1,6 @@
 import {
   LOADING,
+  TOGGLE_THEME,
   TOGGLE_NAV_MENU,
   BTNS_HOVERING,
   BTNS_EXIT_HOVERING,
@@ -14,6 +15,9 @@ const reducer = (state, action) => {
 
     case TOGGLE_NAV_MENU:
       return { ...state, nav_menu: !state.nav_menu };
+
+    case TOGGLE_THEME:
+      return { ...state, dark_mode: !state.dark_mode };
 
     case BTNS_HOVERING:
       return { ...state, btns_hover: true };
