@@ -90,6 +90,9 @@ body {
     padding-right: 1.25rem;
     text-wrap: nowrap;
   }
+  a:hover {
+    font-weight: $font_weight8;
+  }
   a:visited {
     color: $primary_200;
   }

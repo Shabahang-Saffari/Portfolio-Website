@@ -6,7 +6,7 @@ const hero_title_array = hero_title.split("");
 
 const Hero = () => {
   return (
-    <div className="hero_wrapper">
+    <div id="home" className="hero_wrapper">
       <div className="hero_title_wrapper">
         <motion.div
           className="hero_title"

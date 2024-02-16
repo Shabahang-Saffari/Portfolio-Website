@@ -9,7 +9,7 @@ export const inner_links = [
   },
   {
     id: 2,
-    href: "#about",
+    href: "#my_info",
     text: "About Me",
   },
   {

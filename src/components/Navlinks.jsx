@@ -19,10 +19,9 @@ const Navlinks = () => {
               scale: 1.1,
               y: -6,
               textShadow: "0px 0px 8px rgb(255,255,255)",
-              fontWeight: "bold",
             }}
           >
-            <a href={link.url}>{link.text}</a>
+            <a href={link.href}>{link.text}</a>
           </motion.li>
         );
       })}
@@ -37,7 +36,6 @@ const Navlinks = () => {
               scale: 1.1,
               y: -6,
               textShadow: "0px 0px 8px rgb(255,255,255)",
-              fontWeight: "bold",
             }}
           >
             <a href={link.url}>{link.name}</a>
