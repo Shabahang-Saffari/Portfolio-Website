@@ -50,18 +50,18 @@
   font-size: $base_font;
 }
 
-.theme_mode_btn {
-  @include flex_center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  transition: $transition;
-  &:hover {
-    background: $primary_400;
-    color: $primary_100;
-  }
-  // border: 2px solid rgb(166, 255, 0) !important;
-}
+// .theme_mode_btn {
+//   @include flex_center;
+//   width: 60px;
+//   height: 60px;
+//   border-radius: 50%;
+//   transition: $transition;
+//   &:hover {
+//     background: $primary_400;
+//     color: $primary_100;
+//   }
+//   // border: 2px solid rgb(166, 255, 0) !important;
+// }
 .navlinks_btn_wrapper {
   flex: 1;
   @include flex_center;

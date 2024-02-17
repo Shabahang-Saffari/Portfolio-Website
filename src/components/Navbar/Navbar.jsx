@@ -12,16 +12,11 @@ const Navbar = () => {
     toggle_nav_menu,
     hover_on_available,
     exit_available_hover,
+    hover_btns,
+    hover_btns_exit,
   } = useGlobalContext();
 
-  const nav_menu_btn_handler = () => {
-    toggle_nav_menu();
-  };
-
-  const toggle_theme_handler = () => {
-    // ** after 2s **
-    toggle_theme();
-  };
+  // **************   Available btn   *******************
 
   const cursor_hover_handler = () => {
     hover_on_available();
@@ -29,6 +24,25 @@ const Navbar = () => {
 
   const cursor_exit_hover_handler = () => {
     exit_available_hover();
+  };
+
+  // **************   Theme Mode   *******************
+
+  const toggle_theme_handler = () => {
+    toggle_theme();
+  };
+
+  const links_cursor_hover_handler = () => {
+    hover_btns();
+  };
+
+  const links_cursor_exit_hover_handler = () => {
+    hover_btns_exit();
+  };
+
+  // **************   NavLinks menu btn   *************
+  const nav_menu_btn_handler = () => {
+    toggle_nav_menu();
   };
 
   return (
@@ -50,9 +64,22 @@ const Navbar = () => {
 
         <div className="theme_mode_wrapper">
           <div className="white_effect"></div>
-          <div onClick={toggle_theme_handler} className="theme_mode_btn">
+          <motion.div
+            className="theme_mode_btn"
+            onClick={toggle_theme_handler}
+            onMouseOver={links_cursor_hover_handler}
+            onMouseLeave={links_cursor_exit_hover_handler}
+            initial={{ opacity: 0, scale: 0.3 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            whileHover={{
+              scale: 1.1,
+              y: -6,
+              textShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
+          >
             {dark_mode ? "Night" : "Day"}
-          </div>
+          </motion.div>
         </div>
         <div className="navlinks_btn_wrapper">
           <AnimatePresence>{nav_menu && <Navlinks />}</AnimatePresence>
