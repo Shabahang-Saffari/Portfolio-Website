@@ -12,8 +12,8 @@
     background: $primary_100;
     color: $primary_400;
 
-    // transition: 300ms ease-in-out all;
+    transition: 300ms ease-in-out all;
   } @else {
-    // transition: 300ms ease-in-out all;
+    transition: 300ms ease-in-out all;
   }
 }

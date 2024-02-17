@@ -15,7 +15,7 @@ const AppContext = createContext();
 
 const initialState = {
   loading: false,
-  dark_mode: false,
+  dark_mode: true,
   nav_menu: false,
   btns_hover: false,
   available_hover: false,

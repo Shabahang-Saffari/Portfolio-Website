@@ -10,10 +10,12 @@
   width: 100%;
   background: $primary_700;
   z-index: 1;
+  transition: 300ms ease-in-out all;
   // border: 2px solid rgb(166, 255, 0) !important;
 }
 .light_mode .nav_wrapper {
   background: $primary_100;
+  transition: 300ms ease-in-out all;
 }
 .nav_content {
   padding: 1rem 2rem;
@@ -23,6 +25,7 @@
   justify-content: space-between;
   font-family: "Comfortaa", sans-serif;
   font-size: $small_font;
+  font-weight: $font_weight5;
   text-transform: uppercase;
 }
 .available_status_wrapper {
@@ -31,13 +34,33 @@
 .available_status {
   display: inline-block;
   &:hover {
-    font-weight: $font_weight7;
+    font-weight: $font_weight6;
   }
 }
-.theme_mode {
+
+.light_mode .available_status {
+  &:hover {
+    color: $tertiary-600;
+  }
+}
+
+.theme_mode_wrapper {
   flex: 1;
   @include flex_center;
   font-size: $base_font;
+}
+
+.theme_mode_btn {
+  @include flex_center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: $transition;
+  &:hover {
+    background: $primary_400;
+    color: $primary_100;
+  }
+  // border: 2px solid rgb(166, 255, 0) !important;
 }
 .navlinks_btn_wrapper {
   flex: 1;
@@ -56,6 +79,7 @@
   width: 1.35rem;
   border-radius: 25px;
   background: $primary_200;
+  transition: $transition;
 
   &::before {
     content: "";
@@ -65,6 +89,7 @@
     border-radius: 25px;
     transform: rotate(90deg);
     background: $primary_200;
+    transition: 300ms ease-in-out all;
   }
 
   &.close {
@@ -72,7 +97,7 @@
     &::before {
       transform: rotate(90deg);
     }
-    transition: $transition;
+    transition: 300ms ease-in-out all;
   }
 }
 
@@ -96,6 +121,12 @@
     color: inherit;
   }
   a:hover {
-    font-weight: $font_weight8;
+    font-weight: $font_weight6;
+  }
+}
+
+.light_mode .nav_links {
+  a:hover {
+    color: $tertiary-600;
   }
 }

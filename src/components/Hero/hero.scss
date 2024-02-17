@@ -29,6 +29,16 @@
     }
   }
 }
+
+.light_mode .hero_title {
+  span {
+    &:hover {
+      color: $tertiary-300;
+      filter: blur(0.2rem);
+    }
+  }
+}
+
 // .hero_title::before {
 //   content: "";
 //   position: absolute;

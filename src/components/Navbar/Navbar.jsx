@@ -1,4 +1,5 @@
 import Navlinks from "./Navlinks";
+import { useState } from "react";
 import { useGlobalContext } from "../../Context";
 import { motion, AnimatePresence } from "framer-motion";
 import "./navbar.scss";
@@ -7,6 +8,7 @@ const Navbar = () => {
   const {
     nav_menu,
     toggle_theme,
+    dark_mode,
     toggle_nav_menu,
     hover_on_available,
     exit_available_hover,
@@ -17,6 +19,7 @@ const Navbar = () => {
   };
 
   const toggle_theme_handler = () => {
+    // ** after 2s **
     toggle_theme();
   };
 
@@ -46,8 +49,10 @@ const Navbar = () => {
         </div>
 
         <div className="theme_mode_wrapper">
-          <div className="theme_mode"></div>
-          <p onClick={toggle_theme_handler}>Night</p>
+          <div className="white_effect"></div>
+          <div onClick={toggle_theme_handler} className="theme_mode_btn">
+            {dark_mode ? "Night" : "Day"}
+          </div>
         </div>
         <div className="navlinks_btn_wrapper">
           <AnimatePresence>{nav_menu && <Navlinks />}</AnimatePresence>
