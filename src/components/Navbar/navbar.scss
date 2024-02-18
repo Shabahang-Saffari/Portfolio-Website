@@ -28,6 +28,11 @@
   font-weight: $font_weight5;
   text-transform: uppercase;
 }
+.light_mode .nav_content {
+  font-weight: $font_weight7;
+  transition: 50ms ease-in-out;
+}
+
 .available_status_wrapper {
   flex: 1;
 }
@@ -48,6 +53,11 @@
   flex: 1;
   @include flex_center;
   font-size: $base_font;
+}
+.light_mode .theme_mode_wrapper {
+  :hover {
+    color: $tertiary-600;
+  }
 }
 
 // .theme_mode_btn {

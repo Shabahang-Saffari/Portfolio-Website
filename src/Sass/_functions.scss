@@ -10,7 +10,7 @@
 @mixin theme_mode($light-theme: true) {
   @if $light-theme {
     background: $primary_100;
-    color: $primary_400;
+    color: $primary_500;
 
     transition: 300ms ease-in-out all;
   } @else {
