@@ -1,5 +1,4 @@
 import Navlinks from "./Navlinks";
-import { useState } from "react";
 import { useGlobalContext } from "../../Context";
 import { motion, AnimatePresence } from "framer-motion";
 import "./navbar.scss";

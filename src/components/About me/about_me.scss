@@ -11,10 +11,6 @@
 
   // border: 2px solid rgb(211, 226, 0) !important;
 
-  h4 {
-    font-size: $title_font;
-  }
-
   .about_me_content {
     @include flex_center;
     align-items: flex-start;
@@ -23,6 +19,9 @@
     margin: 2rem auto;
     height: 90%;
     // background: $primary_200;
+  }
+  h4 {
+    font-size: $title_font;
   }
 
   .left_side_wrapper {
@@ -34,7 +33,8 @@
 
     .left_side_top {
       width: 100%;
-      margin-bottom: 5%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
       // background: $primary_600;
       border-radius: 10px;
     }
@@ -50,14 +50,11 @@
     height: 35rem;
     width: 70%;
     text-align: center;
-
-    h4 {
-      display: block;
-    }
   }
   .right_side_content {
     width: 100%;
     height: 100%;
+    margin-top: 2rem;
     border-radius: 10px;
     // border: 1px solid $primary_200;
     background: $primary_600;
