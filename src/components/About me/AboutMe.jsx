@@ -1,3 +1,4 @@
+import Skill from "./Skill";
 import "./about_me.scss";
 import { motion } from "framer-motion";
 
@@ -21,7 +22,9 @@ const AboutMe = () => {
         </div>
         <div className="right_side_wrapper">
           <h4>Skills</h4>
-          <div className="right_side_content"></div>
+          <div className="right_side_content">
+            <Skill />
+          </div>
         </div>
       </div>
     </div>

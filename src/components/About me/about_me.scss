@@ -6,7 +6,8 @@
   scroll-snap-align: start;
 
   scroll-margin: 6rem;
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
   height: calc(100vh - 6rem);
 
   // border: 2px solid rgb(211, 226, 0) !important;
@@ -24,40 +25,66 @@
     font-size: $title_font;
     text-transform: uppercase;
   }
+}
 
-  .left_side_wrapper {
-    height: 35rem;
-    width: 30%;
-    height: 100%;
+.left_side_wrapper {
+  height: 35rem;
+  width: 30%;
+  height: 100%;
 
-    // border: 1px solid $primary_200;
+  // border: 1px solid $primary_200;
+}
+.left_side_top {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  // background: $primary_600;
+  border-radius: 10px;
+}
+.left_side_bottom {
+  width: 100%;
+  height: 45%;
+  margin-top: 5%;
+  background: $primary_600;
+  border-radius: 10px;
+}
+.right_side_wrapper {
+  height: 35rem;
+  width: 70%;
+  text-align: center;
+}
+.right_side_content {
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+  border-radius: 10px;
+  // border: 1px solid $primary_200;
+  background: $primary_600;
+}
 
-    .left_side_top {
-      width: 100%;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      // background: $primary_600;
-      border-radius: 10px;
-    }
-    .left_side_bottom {
-      width: 100%;
-      height: 45%;
-      margin-top: 5%;
-      background: $primary_600;
-      border-radius: 10px;
-    }
-  }
-  .right_side_wrapper {
-    height: 35rem;
-    width: 70%;
-    text-align: center;
-  }
-  .right_side_content {
-    width: 100%;
-    height: 100%;
-    margin-top: 2rem;
-    border-radius: 10px;
-    // border: 1px solid $primary_200;
-    background: $primary_600;
-  }
+.skills_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  // border: 1px solid $primary_200;
+}
+.skill_wrapper {
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid orange;
+}
+.items_wrapper {
+  border-radius: 10px;
+  @include flex_center;
+  justify-content: center;
+  // .item {
+  //   margin-left: 3rem;
+  // }
+}
+.category {
+  background: $primary_500;
+  margin-bottom: 0.5rem;
+}
+.icon {
+  font-size: 2rem;
 }

@@ -96,7 +96,7 @@ export const skills = [
   },
 
   {
-    category: "Programming Languages",
+    category: "Other Programming Languages",
     items: [
       { id: nanoid(), name: "Python", icon: <FaPython /> },
       { id: nanoid(), name: "ASP.NET" },
