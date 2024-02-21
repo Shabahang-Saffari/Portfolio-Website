@@ -36,7 +36,7 @@
 }
 .left_side_top {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   margin-bottom: 2rem;
   // background: $primary_600;
   border-radius: 10px;
@@ -56,34 +56,38 @@
 .right_side_content {
   width: 100%;
   height: 100%;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   border-radius: 10px;
   // border: 1px solid $primary_200;
-  background: $primary_600;
+  // background: $primary_600;
 }
 
 .skills_wrapper {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+
   // border: 1px solid $primary_200;
 }
 .skill_wrapper {
-  justify-content: center;
-  align-items: center;
-  // border: 1px solid orange;
+  // border: 1px solid rgb(37, 148, 212);
+  border-radius: 15px;
+  background: $primary_600;
 }
 .items_wrapper {
-  border-radius: 10px;
   @include flex_center;
   justify-content: center;
+  gap: 3rem;
+  // background: $primary_600;
   // .item {
-  //   margin-left: 3rem;
+  //   // border: 1px solid orange;
   // }
 }
 .category {
   background: $primary_500;
   margin-bottom: 0.5rem;
+  font-weight: $font_weight5;
+  border-radius: 25px;
 }
 .icon {
   font-size: 2rem;

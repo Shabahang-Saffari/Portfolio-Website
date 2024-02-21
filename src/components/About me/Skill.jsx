@@ -13,7 +13,7 @@ const Skill = () => {
               {items.map((item) => {
                 const { id, name, icon } = item;
                 return (
-                  <div className="item">
+                  <div className="item" key={id}>
                     <div className="icon">{icon && icon}</div>
                     <div className="item_name">{name}</div>{" "}
                   </div>
