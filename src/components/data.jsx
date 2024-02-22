@@ -124,16 +124,16 @@ export const skills = [
   {
     category: "Multimedia Tools",
     items: [
-      { id: nanoid(), name: "Adobe Photoshop", icon: <SiAdobephotoshop /> },
-      { id: nanoid(), name: "Adobe Illustrator", icon: <SiAdobeillustrator /> },
+      { id: nanoid(), name: "Photoshop", icon: <SiAdobephotoshop /> },
+      { id: nanoid(), name: "Illustrator", icon: <SiAdobeillustrator /> },
       {
         id: nanoid(),
-        name: "Adobe After Effects",
+        name: "After Effects",
         icon: <SiAdobeaftereffects />,
       },
       {
         id: nanoid(),
-        name: "Adobe Premiere Pro",
+        name: "Premiere Pro",
         icon: <SiAdobepremierepro />,
       },
     ],

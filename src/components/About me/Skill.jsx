@@ -1,5 +1,6 @@
 import { skills } from "../data";
 import { nanoid } from "nanoid";
+import { motion } from "framer-motion";
 
 const Skill = () => {
   return (
@@ -13,10 +14,14 @@ const Skill = () => {
               {items.map((item) => {
                 const { id, name, icon } = item;
                 return (
-                  <div className="item" key={id}>
+                  <motion.div
+                    className="item"
+                    key={id}
+                    whileHover={{ scale: 1.5 }}
+                  >
                     <div className="icon">{icon && icon}</div>
                     <div className="item_name">{name}</div>{" "}
-                  </div>
+                  </motion.div>
                 );
               })}
             </div>
@@ -24,26 +29,6 @@ const Skill = () => {
         );
       })}
     </div>
-
-    // <>
-    //   {skills.map((skill) => {
-    //     const { category, items } = skill;
-    //     return items.map((item) => {
-    //       const { id, name, icon } = item;
-    //       return (
-    //         <div className="skill_wrapper" key={id}>
-    //           <div className="category">{category}</div>
-    //           <div className="items_wrapper">
-    //             <div className="item">
-    //               <div className="icon">{icon && icon}</div>
-    //               <div className="item_name">{name}</div>
-    //             </div>
-    //           </div>
-    //         </div>
-    //       );
-    //     });
-    //   })}
-    // </>
   );
 };
 export default Skill;
