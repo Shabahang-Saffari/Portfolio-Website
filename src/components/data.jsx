@@ -24,7 +24,7 @@ import {
   FaGitAlt,
 } from "react-icons/fa";
 
-import { GrGithub } from "react-icons/gr";
+import { GrGithub, GrDatabase } from "react-icons/gr";
 import { nanoid } from "nanoid";
 
 // *************************
@@ -87,10 +87,11 @@ export const skills = [
   },
 
   {
-    category: "Back_End",
+    category: "Back-End",
     items: [
       { id: nanoid(), name: "Node.js", icon: <FaNodeJs /> },
       { id: nanoid(), name: "Express.js", icon: <SiExpress /> },
+      { id: nanoid(), name: "Rest API", icon: <GrDatabase /> },
       { id: nanoid(), name: "Postman", icon: <SiPostman /> },
     ],
   },
