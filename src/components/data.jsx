@@ -117,7 +117,7 @@ export const skills = [
     category: "Deployment and Version Control",
     items: [
       { id: nanoid(), name: "Microsoft Azure", icon: <SiMicrosoftazure /> },
-      { id: nanoid(), name: "Azure Devops", icon: <SiAzuredevops /> },
+      // { id: nanoid(), name: "Azure Devops", icon: <SiAzuredevops /> },
       { id: nanoid(), name: "Git", icon: <FaGitAlt /> },
     ],
   },

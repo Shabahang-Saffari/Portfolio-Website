@@ -11,19 +11,26 @@ const AboutMe = () => {
           <div className="left_side_top">
             <p>
               I am a passionate individual with a keen interest in coding and
-              the art of crafting clean and efficient code. I am a highly
-              skilled and dedicated developer, holding a bachelor's degree in
-              the field. I am enthusiastic about programming and find joy in
-              problem-solving. I believe in the power of technology to create
-              elegant solutions, and I am always eager to explore new challenges
-              in the world of coding.
+              the art of crafting clean and efficient code. I believe in the
+              power of technology to create elegant solutions, and I am always
+              eager to explore new challenges in the world of coding.
+              {/* I am a
+              highly skilled and dedicated developer, holding a bachelor's
+              degree in the field. I am enthusiastic about programming and find
+              joy in problem-solving. */}
             </p>
           </div>
           <div className="left_side_bottom">
-            <h4>Formal Education</h4>
+            <h4>Education</h4>
             <ul>
-              <li>Bachelor of Computer Sience</li>
-              <li>Python Programing Language</li>
+              <li>Bachelor of Software Engineering</li>
+              <p>2008-2012, Islamic Azad University, Tehran, Iran</p>
+              <li>Python Programing (A)</li>
+              <p>Fall 2022, BCIT, BC, Canada </p>
+              <li>React</li>
+              <p>Udemy </p>
+              <li>NodeJS</li>
+              <p>Udemy </p>
             </ul>
           </div>
         </div>
