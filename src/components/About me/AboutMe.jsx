@@ -27,9 +27,9 @@ const AboutMe = () => {
               <p>May 2012, Islamic Azad University, Tehran, Iran</p>
               <li>Python Programing (A)</li>
               <p>Fall 2022, BCIT, BC, Canada </p>
-              <li>React</li>
-              <p>Udemy Certificate</p>
               <li>NodeJS</li>
+              <p>Udemy Certificate</p>
+              <li>React</li>
               <p>Udemy Certificate</p>
             </ul>
           </div>
