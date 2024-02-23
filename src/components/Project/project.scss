@@ -40,39 +40,64 @@
   position: relative;
   width: 70%;
   height: 75%;
+  border-radius: $border_radius;
+  background: $primary_650;
   // border: 2px solid rgb(211, 226, 0) !important;
 }
+.prj_pics_wrapper {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  height: 14rem;
+  width: 26rem;
 
+  // border: 2px solid rgb(211, 226, 0) !important;
+}
 .desktop_pic {
   position: absolute;
-  top: 25%;
-  right: 10%;
-  // transform: translateY(-50%) perspective(50rem) rotateY(-30deg);
-  height: 18rem;
-  width: 34rem;
-  border-radius: 10px;
-  border: 2px solid $primary_300;
+  bottom: 0;
+  right: 0;
+  height: 14rem;
+  width: 26rem;
+  border-radius: $border_radius;
+  border: 2px solid $primary_200;
   background: url("../../pictures/desktop-bw.jpg") center/cover;
+  transition: $transition;
+
+  &:hover {
+    filter: invert(100%);
+  }
 }
 .tablet_pic {
   position: absolute;
-  top: 12%;
-  right: 0%;
-  // transform: translateY(-50%) perspective(50rem) rotateY(-30deg);
-  height: 16rem;
-  width: 12rem;
-  border-radius: 10px;
-  border: 2px solid $primary_300;
+  bottom: -2%;
+  right: -25%;
+  transform: perspective(50rem) rotateY(-30deg);
+  height: 14rem;
+  width: 10rem;
+  border-radius: $border_radius;
+  border: 2px solid $primary_200;
   background: url("../../pictures/Tablet-bw.jpg") center/cover;
+  transition: $transition;
+
+  &:hover {
+    filter: invert(100%);
+  }
 }
 .cellphone_pic {
   position: absolute;
-  top: 39%;
-  right: 25%;
-  // transform: translateY(-50%) perspective(50rem) rotateY(-30deg);
+  bottom: 0%;
+  left: -10%;
+  transform: perspective(50rem) rotateY(30deg);
   height: 10rem;
   width: 6rem;
-  border-radius: 10px;
-  border: 2px solid $primary_300;
+  border-radius: $border_radius;
+  border: 2px solid $primary_200;
   background: url("../../pictures/Cellphone-bw.jpg") center/cover;
+  transition: $transition;
+
+  &:hover {
+    filter: invert(100%);
+  }
 }

@@ -45,14 +45,14 @@
   margin-bottom: 2rem;
   line-height: 1.3rem;
   // background: $primary_600;
-  // border-radius: 10px;
+  // border-radius: $border_radius;
 }
 .left_side_bottom {
   width: 100%;
   height: 22rem;
   margin-top: 5%;
   background: $primary_650;
-  border-radius: 10px;
+  border-radius: $border_radius;
   h4 {
     margin-left: 1rem;
     padding-top: 1rem;
@@ -81,7 +81,7 @@
   width: 100%;
   height: 100%;
   margin-top: 0.5rem;
-  border-radius: 10px;
+  border-radius: $border_radius;
   // border: 1px solid $primary_200;
   // background: $primary_600;
 }
@@ -96,7 +96,7 @@
 // }
 // .skill_wrapper {
 //   // border: 1px solid rgb(37, 148, 212);
-//   border-radius: 15px;
+//   border-radius: $border_radius;
 //   background: $primary_600;
 // }
 
@@ -118,7 +118,7 @@
 //   margin-bottom: 0.5rem;
 //   padding: 0.2rem 0 0.2rem 0;
 //   font-weight: $font_weight5;
-//   border-radius: 10px 10px 0 0;
+//   border-radius: $border_radius $border_radius 0 0;
 //   height: 4rem;
 //   width: 9.5rem;
 //   overflow-wrap: break-word;
@@ -140,7 +140,7 @@
 }
 .skill_wrapper {
   // border: 1px solid rgb(37, 148, 212);
-  border-radius: 15px;
+  border-radius: $border_radius;
   background: $primary_650;
 }
 .items_wrapper {
@@ -164,7 +164,7 @@
   margin-bottom: 0.5rem;
   padding: 0.2rem 0 0.2rem 0;
   font-weight: $font_weight5;
-  border-radius: 10px 10px 0 0;
+  border-radius: $border_radius $border_radius 0 0;
 }
 .icon {
   font-size: 1.5rem;
