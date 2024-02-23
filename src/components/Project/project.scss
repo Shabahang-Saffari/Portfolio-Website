@@ -3,12 +3,32 @@
 @import "../../Sass/functions";
 // ************ Project ***************
 
-.project {
-  scroll-snap-align: start;
+.project_wrapper {
   scroll-margin: 6rem;
-
+  font-family: "Roboto", sans-serif;
+  color: $primary_300;
+  letter-spacing: 1px;
   height: calc(100vh - 6rem);
+  scroll-snap-align: start;
 
-  font-size: $xhuge_font;
   // border: 2px solid rgb(211, 226, 0) !important;
+  .project_content {
+    overflow: hidden;
+    @include flex_center;
+    align-items: flex-start;
+    gap: 2rem;
+    width: calc(100vw - 5rem);
+    margin: 2rem auto;
+    margin-bottom: 1rem;
+    height: calc(100% - 1rem);
+    // background: $primary_200;
+    // border: 2px solid rgb(211, 226, 0) !important;
+  }
+  h4 {
+    text-align: left;
+    font-size: $title_font;
+    font-weight: $font_weight3;
+    text-transform: uppercase;
+    color: $primary_100;
+  }
 }

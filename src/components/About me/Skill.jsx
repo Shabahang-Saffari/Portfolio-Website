@@ -17,7 +17,11 @@ const Skill = () => {
                   <motion.div
                     className="item"
                     key={id}
-                    whileHover={{ scale: 1.4 }}
+                    whileHover={{
+                      scale: 1.4,
+                      y: -10,
+                      textShadow: "0px 0px 8px rgb(255,255,255)",
+                    }}
                   >
                     <div className="icon">{icon && icon}</div>
                     <div className="item_name">{name}</div>{" "}

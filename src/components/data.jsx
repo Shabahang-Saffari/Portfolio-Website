@@ -24,7 +24,7 @@ import {
   FaGitAlt,
 } from "react-icons/fa";
 
-import { GrGithub, GrDatabase } from "react-icons/gr";
+import { GrGithub, GrDatabase, GrHeroku } from "react-icons/gr";
 import { nanoid } from "nanoid";
 
 // *************************
@@ -117,6 +117,7 @@ export const skills = [
     category: "Deployment and Version Control",
     items: [
       { id: nanoid(), name: "Microsoft Azure", icon: <SiMicrosoftazure /> },
+      { id: nanoid(), name: "Heroku", icon: <GrHeroku /> },
       // { id: nanoid(), name: "Azure Devops", icon: <SiAzuredevops /> },
       { id: nanoid(), name: "Git", icon: <FaGitAlt /> },
     ],
