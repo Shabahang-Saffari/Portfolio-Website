@@ -1,0 +1,155 @@
+@import "../../Sass/resets";
+@import "../../Sass/variables";
+@import "../../Sass/functions";
+// ************ Project ***************
+
+.project_page_wrapper {
+  scroll-margin: 6rem;
+  scroll-snap-align: start;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  height: calc(100vh - 6rem);
+  // border: 2px solid rgb(211, 226, 0) !important;
+}
+
+.project_page_content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: calc(100vw - 5rem);
+  margin: 2rem auto;
+  margin-bottom: 1rem;
+  height: calc(100% - 1rem);
+  // background: $primary_200;
+  // border: 2px solid rgb(211, 226, 0) !important;
+  h4 {
+    width: 100%;
+    text-align: left;
+    font-size: $title_font;
+    font-weight: $font_weight3;
+    text-transform: uppercase;
+    color: $primary_100;
+    // border: 2px solid rgb(211, 226, 0) !important;
+  }
+}
+
+.project_wrapper {
+  @include flex_center;
+  width: 70%;
+  height: 75%;
+  border-radius: $border_radius;
+  background: $primary_650;
+  // border: 2px solid rgb(211, 226, 0) !important;
+}
+.left_side {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  // border: 2px solid rgb(211, 226, 0) !important;
+}
+.project_title {
+  font-size: $xhuge_font;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.prj_description {
+  margin: 1rem 5rem 1rem 1rem;
+  letter-spacing: 1px;
+  line-height: 1.3rem;
+}
+.techs_stack {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 5rem 2rem 1rem;
+
+  li {
+    @include flex_center;
+    flex-direction: column;
+  }
+  div {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: $xsmall_font;
+  }
+}
+
+.right_side {
+  @include flex_center;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+
+  // border: 2px solid rgb(211, 226, 0) !important;
+  .my_links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+  li {
+    padding-right: 1.25rem;
+    text-wrap: nowrap;
+    text-decoration: none;
+  }
+  a {
+    color: inherit;
+    font-size: $large_font;
+  }
+  a:hover {
+    font-weight: $font_weight6;
+  }
+}
+.prj_pics_wrapper {
+  @include flex_center;
+  position: relative;
+  height: 55%;
+  width: 95%;
+
+  // border: 2px solid rgb(211, 226, 0) !important;
+}
+.desktop_pic {
+  height: 100%;
+  width: 100%;
+  border-radius: $border_radius;
+  border: 1px solid $primary_300;
+  transition: $transition;
+
+  &:hover {
+    filter: invert(100%) blur(0.1rem);
+  }
+}
+.tablet_pic {
+  position: absolute;
+  bottom: 0;
+  right: -10%;
+  transform: perspective(50rem) rotateY(-30deg);
+  height: 16rem;
+  width: 12rem;
+  border-radius: $border_radius;
+  border: 1px solid $primary_300;
+  transition: $transition;
+
+  &:hover {
+    filter: invert(100%) blur(0.1rem);
+  }
+}
+.cellphone_pic {
+  position: absolute;
+  bottom: 0%;
+  left: -10%;
+  transform: perspective(50rem) rotateY(30deg);
+  height: 12rem;
+  width: 7rem;
+  border-radius: $border_radius;
+  border: 1px solid $primary_300;
+  transition: $transition;
+
+  &:hover {
+    filter: invert(100%) blur(0.1rem);
+  }
+}

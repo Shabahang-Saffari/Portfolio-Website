@@ -1,3 +1,9 @@
+import BugTracker_desktop from "../pictures/BugTracker_desktop.jpg";
+import BugTracker_tablet from "../pictures/BugTracker_tablet.jpg";
+import BugTracker_cellphone from "../pictures/BugTracker_cellphone.jpg";
+// *************************
+// **  Importing Icons  ****
+// *************************
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
 
 import {
@@ -139,5 +145,30 @@ export const skills = [
         icon: <SiAdobepremierepro />,
       },
     ],
+  },
+];
+
+// *************************
+// *******  Projects *******
+// *************************
+
+export const projects = [
+  {
+    id: nanoid(),
+    name: "BugTracker",
+    live_url: "www.google.com",
+    github_url: "www.google.com",
+    description:
+      "This application is a comprehensive full-stack solution, incorporating robust authentication and authorization features. Users can effortlessly sign up, and the admin defines roles and access levels. The application provides a range of functionalities, including project and ticket creation/editing, commenting, and more. Users benefit from a powerful search and filter system, ensuring efficient management and tracking of bugs and issues.",
+    techs: [
+      { id: nanoid(), name: "NodeJS", icon: <FaNodeJs /> },
+      { id: nanoid(), name: "MS SQL", icon: <SiMicrosoftsqlserver /> },
+      { id: nanoid(), name: "Javascript", icon: <RiJavascriptFill /> },
+      { id: nanoid(), name: "HTML", icon: <FaHtml5 /> },
+      { id: nanoid(), name: "CSS", icon: <FaCss3Alt /> },
+    ],
+    pic1: BugTracker_desktop,
+    pic2: BugTracker_tablet,
+    pic3: BugTracker_cellphone,
   },
 ];

@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import AboutMe from "./components/About me/AboutMe";
-import Project from "./components/Project/Project";
+import Projects from "./components/Projects/Projects";
 import Cursor from "./components/Cursor/Cursor";
 
 import { useGlobalContext } from "./Context";
@@ -18,7 +18,7 @@ function App() {
       <Navbar />
       <Hero />
       <AboutMe />
-      <Project />
+      <Projects />
     </main>
   );
 }
