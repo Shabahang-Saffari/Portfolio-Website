@@ -19,6 +19,15 @@ const Hero = () => {
           {hero_title_array.map((char) => {
             return <span key={nanoid()}>{char}</span>;
           })}
+          <p className="my_sentence">
+            Transforming lines of code into innovative solutions.
+            <br />
+            <small>
+              Detail-oriented developer with an insatiable thirst for knowledge,
+              constantly seeking new challenges and opportunities to grow,
+              innovate, and make a lasting impact in the digital landscape.
+            </small>
+          </p>
         </motion.div>
       </div>
     </div>

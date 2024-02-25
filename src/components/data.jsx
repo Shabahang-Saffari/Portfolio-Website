@@ -162,10 +162,11 @@ export const projects = [
       "This application is a comprehensive full-stack solution, incorporating robust authentication and authorization features. Users can effortlessly sign up, and the admin defines roles and access levels. The application provides a range of functionalities, including project and ticket creation/editing, commenting, and more. Users benefit from a powerful search and filter system, ensuring efficient management and tracking of bugs and issues.",
     techs: [
       { id: nanoid(), name: "NodeJS", icon: <FaNodeJs /> },
+      { id: nanoid(), name: "ExpressJS", icon: <SiExpress /> },
       { id: nanoid(), name: "MS SQL", icon: <SiMicrosoftsqlserver /> },
       { id: nanoid(), name: "Javascript", icon: <RiJavascriptFill /> },
-      { id: nanoid(), name: "HTML", icon: <FaHtml5 /> },
       { id: nanoid(), name: "CSS", icon: <FaCss3Alt /> },
+      { id: nanoid(), name: "HTML", icon: <FaHtml5 /> },
     ],
     pic1: BugTracker_desktop,
     pic2: BugTracker_tablet,
