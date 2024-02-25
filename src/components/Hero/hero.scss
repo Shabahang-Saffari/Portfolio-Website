@@ -18,14 +18,24 @@
 
 .hero_title {
   position: relative;
-  // border: 2px solid rgb(10, 124, 253) !important;
+  // border: 2px solid rgb(211, 226, 0) !important;
   font-family: "Noto Sans Thai", sans-serif;
-  padding: 0 7%;
+
+  .hero_title_p1 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    // border: 2px solid rgb(10, 124, 253) !important;
+    line-height: 0.8;
+  }
+  .hero_title_p2 {
+    width: 100%;
+    // border: 2px solid rgb(10, 124, 253) !important;
+  }
   span {
     font-size: 15vw;
     height: 100%;
     transition: $transition;
-    line-height: 20rem;
     &:hover {
       color: $secondary_100;
       filter: blur(0.2rem);
@@ -44,10 +54,27 @@
 .my_sentence {
   position: absolute;
   top: 0;
-  right: 8%;
-  width: 35rem;
-  color: $primary_200;
-  font-size: 1rem;
+  right: 0;
+  @include flex_center;
+  width: 32rem;
+  height: 11rem;
+  text-transform: none;
+  // text-align: justify;
+  color: $primary_300;
+  p {
+    display: inline;
+    // border: 2px solid rgb(211, 226, 0) !important;
+  }
+  small {
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .curlies {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 100;
+    font-size: 11rem;
+    line-height: 0;
+  }
   // border: 2px solid rgb(211, 226, 0) !important;
 }
 // .hero_title::before {

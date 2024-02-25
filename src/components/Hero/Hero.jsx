@@ -2,8 +2,10 @@ import { nanoid } from "nanoid";
 import { motion } from "framer-motion";
 import "./hero.scss";
 
-const hero_title = "WEB DEVELOPER";
-const hero_title_array = hero_title.split("");
+const hero_title_p1 = "WEB";
+const hero_title_p2 = "DEVELOPER";
+const hero_title_array1 = hero_title_p1.split("");
+const hero_title_array2 = hero_title_p2.split("");
 
 const Hero = () => {
   return (
@@ -16,18 +18,30 @@ const Hero = () => {
           transition={{ type: "spring", stiffness: 150 }}
           whileHover={{ scale: 1.1 }}
         >
-          {hero_title_array.map((char) => {
-            return <span key={nanoid()}>{char}</span>;
-          })}
-          <p className="my_sentence">
-            Transforming lines of code into innovative solutions.
-            <br />
-            <small>
-              Detail-oriented developer with an insatiable thirst for knowledge,
-              constantly seeking new challenges and opportunities to grow,
-              innovate, and make a lasting impact in the digital landscape.
-            </small>
-          </p>
+          <div className="hero_title_p1">
+            {hero_title_array1.map((char) => {
+              return <span key={nanoid()}>{char}</span>;
+            })}
+          </div>
+          <div className="hero_title_p2">
+            {hero_title_array2.map((char) => {
+              return <span key={nanoid()}>{char}</span>;
+            })}
+          </div>
+
+          <div className="my_sentence">
+            <div className="curlies">{"{"}</div>
+            <p>
+              Transforming lines of code into innovative solutions.
+              <small>
+                I am a detail-oriented developer with an insatiable thirst for
+                knowledge, constantly seeking new challenges and opportunities
+                to grow, innovate, and make a lasting impact in the digital
+                landscape.
+              </small>
+            </p>
+            <div className="curlies">{"}"}</div>
+          </div>
         </motion.div>
       </div>
     </div>
