@@ -1,8 +1,6 @@
 import Project from "./Project";
 import "./projects.scss";
 
-import { motion } from "framer-motion";
-
 const Projects = () => {
   return (
     <div className="project_page_wrapper" id="project">

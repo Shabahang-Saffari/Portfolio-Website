@@ -1,0 +1,45 @@
+@import "../../Sass/resets";
+@import "../../Sass/variables";
+@import "../../Sass/functions";
+// ************ Project ***************
+
+.contact_page_wrapper {
+  scroll-margin: 6rem;
+  scroll-snap-align: start;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  height: calc(100vh - 6rem);
+  // border: 2px solid rgb(211, 226, 0) !important;
+}
+
+.contact_page_content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: calc(100vw - 5rem);
+  margin: 2rem auto;
+  margin-bottom: 1rem;
+  height: calc(100% - 1rem);
+  // background: $primary_200;
+  // border: 2px solid rgb(211, 226, 0) !important;
+  h4 {
+    width: 100%;
+    text-align: left;
+    font-size: $title_font;
+    font-weight: $font_weight3;
+    text-transform: uppercase;
+    color: $primary_100;
+    // border: 2px solid rgb(211, 226, 0) !important;
+  }
+}
+
+.message_wrapper {
+  @include flex_center;
+  width: 70%;
+  height: 85%;
+  border-radius: $border_radius;
+  background: $primary_650;
+  // border: 2px solid rgb(211, 226, 0) !important;
+}

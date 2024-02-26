@@ -97,11 +97,9 @@
     text-decoration: none;
   }
   a {
+    display: inline-block;
     color: inherit;
     font-size: $large_font;
-  }
-  a:hover {
-    font-weight: $font_weight6;
   }
 }
 .prj_pics_wrapper {

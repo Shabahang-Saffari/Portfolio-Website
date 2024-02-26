@@ -1,6 +1,17 @@
+import { useGlobalContext } from "../../Context";
 import { projects } from "../data";
+import { motion, spring } from "framer-motion";
 
 const Project = () => {
+  const { hover_btns, hover_btns_exit } = useGlobalContext();
+  const links_cursor_hover_handler = () => {
+    hover_btns();
+  };
+
+  const links_cursor_exit_hover_handler = () => {
+    hover_btns_exit();
+  };
+
   return projects.map((project) => {
     const {
       id,
@@ -48,10 +59,32 @@ const Project = () => {
           </div>
           <ul className="my_links">
             <li>
-              <a href={live_url}>Try it live</a>
+              <motion.a
+                href={live_url}
+                onMouseOver={links_cursor_hover_handler}
+                onMouseLeave={links_cursor_exit_hover_handler}
+                transition={{ type: "spring", stiffness: 200 }}
+                whileHover={{
+                  scale: 1.2,
+                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                }}
+              >
+                Try it live
+              </motion.a>
             </li>
             <li>
-              <a href={github_url}>GitHub</a>
+              <motion.a
+                href={github_url}
+                onMouseOver={links_cursor_hover_handler}
+                onMouseLeave={links_cursor_exit_hover_handler}
+                transition={{ type: "spring", stiffness: 200 }}
+                whileHover={{
+                  scale: 1.2,
+                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                }}
+              >
+                GitHub
+              </motion.a>
             </li>
           </ul>
         </div>
