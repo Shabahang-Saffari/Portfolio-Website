@@ -28,6 +28,7 @@ import {
   FaCss3Alt,
   FaNodeJs,
   FaGitAlt,
+  FaFigma,
 } from "react-icons/fa";
 
 import { GrGithub, GrDatabase, GrHeroku } from "react-icons/gr";
@@ -83,6 +84,7 @@ export const skills = [
   {
     category: "Front-End",
     items: [
+      { id: nanoid(), name: "Figma", icon: <FaFigma /> },
       { id: nanoid(), name: "HTML", icon: <FaHtml5 /> },
       { id: nanoid(), name: "CSS", icon: <FaCss3Alt /> },
       { id: nanoid(), name: "SASS", icon: <SiSass /> },

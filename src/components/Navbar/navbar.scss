@@ -38,6 +38,8 @@
 }
 .available_status {
   display: inline-block;
+  color: inherit;
+
   &:hover {
     font-weight: $font_weight6;
   }

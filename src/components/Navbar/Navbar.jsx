@@ -48,7 +48,8 @@ const Navbar = () => {
     <nav className="nav_wrapper">
       <div className="nav_content">
         <div className="available_status_wrapper">
-          <motion.div
+          <motion.a
+            href="#contact"
             className="available_status"
             onMouseOver={cursor_hover_handler}
             onMouseLeave={cursor_exit_hover_handler}
@@ -58,7 +59,7 @@ const Navbar = () => {
             }}
           >
             Available to join your team
-          </motion.div>
+          </motion.a>
         </div>
 
         <div className="theme_mode_wrapper">

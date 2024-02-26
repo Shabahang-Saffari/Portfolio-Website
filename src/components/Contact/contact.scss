@@ -35,11 +35,55 @@
   }
 }
 
-.message_wrapper {
-  @include flex_center;
+form {
+  display: flex;
+  flex-direction: column;
   width: 70%;
   height: 85%;
   border-radius: $border_radius;
-  background: $primary_650;
   // border: 2px solid rgb(211, 226, 0) !important;
+
+  label {
+    font-size: $large_font;
+    color: $primary_300;
+    margin-bottom: 1rem;
+  }
+  input {
+    color: $primary_200;
+    font-size: $large_font;
+    border: none;
+    border-bottom: 1px solid $primary_300;
+    background: transparent;
+    margin-bottom: 4rem;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  textarea {
+    resize: none;
+    height: 12vh;
+    border: none;
+    border-bottom: 1px solid $primary_300;
+    background: transparent;
+    font-family: "Roboto", sans-serif;
+    font-size: $large_font;
+    color: $primary_200;
+    margin-bottom: 1rem;
+    &:focus {
+      outline: none;
+    }
+  }
+  .btn_container {
+    @include flex_center;
+  }
+  button {
+    height: 2rem;
+    width: 20rem;
+    font-size: $xlarge_font;
+    color: inherit;
+    border: none;
+    background: transparent;
+    // border: 2px solid rgb(211, 226, 0) !important;
+  }
 }
