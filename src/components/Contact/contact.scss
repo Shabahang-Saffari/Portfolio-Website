@@ -55,6 +55,11 @@ form {
     border-bottom: 1px solid $primary_300;
     background: transparent;
     margin-bottom: 4rem;
+
+    &::placeholder {
+      color: $primary_500;
+    }
+
     &:focus {
       outline: none;
     }
@@ -62,14 +67,18 @@ form {
 
   textarea {
     resize: none;
-    height: 12vh;
     border: none;
     border-bottom: 1px solid $primary_300;
     background: transparent;
     font-family: "Roboto", sans-serif;
     font-size: $large_font;
     color: $primary_200;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+
+    &::placeholder {
+      color: $primary_500;
+    }
+
     &:focus {
       outline: none;
     }
@@ -80,8 +89,10 @@ form {
   button {
     height: 2rem;
     width: 20rem;
+
     font-size: $xlarge_font;
     color: inherit;
+    text-transform: uppercase;
     border: none;
     background: transparent;
     // border: 2px solid rgb(211, 226, 0) !important;

@@ -31,13 +31,27 @@ const Contact = () => {
         <h4>Contact Me</h4>
         <form>
           <label htmlFor="users_name_input">Your Name</label>
-          <input type="text" id="users_name_input" className="message_input" />
+          <input
+            type="text"
+            id="users_name_input"
+            className="message_input"
+            placeholder="Enter your name"
+          />
           <label htmlFor="email_input">Your Email</label>
-          <input type="text" id="email_input" className="message_input" />
+          <input
+            type="text"
+            id="email_input"
+            className="message_input"
+            placeholder="Enter your Email"
+          />
           <label htmlFor="users_message" className="users_name_label">
             Your Message
           </label>
-          <textarea name="" id="users_message"></textarea>
+          <textarea
+            name=""
+            id="users_message"
+            placeholder="Type your message here."
+          ></textarea>
           <div className="btn_container">
             <motion.button
               onMouseOver={cursor_hover_handler}
