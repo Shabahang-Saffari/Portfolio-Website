@@ -2,6 +2,9 @@ import "./contact.scss";
 import { useGlobalContext } from "../../Context";
 import { motion } from "framer-motion";
 
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 const button_variants = {
   hover: {
     y: [5, 0, 5],
@@ -13,6 +16,7 @@ const button_variants = {
 };
 
 const Contact = () => {
+  const my_form_ref = useRef();
   const { hover_on_available, exit_available_hover } = useGlobalContext();
 
   // **************   Available btn   *******************
@@ -25,14 +29,35 @@ const Contact = () => {
     exit_available_hover();
   };
 
+  // **************   Send Email   *******************
+
+  const send_email = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_14s2676", "template_oz2h2mv", my_form_ref.current, {
+        publicKey: "thQNDAzkpkqTIxI_F",
+      })
+      .then(
+        () => {
+          my_form_ref.current.reset();
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <div className="contact_page_wrapper" id="contact">
       <div className="contact_page_content">
         <h4>Contact Me</h4>
-        <form>
+        <form ref={my_form_ref} onSubmit={send_email}>
           <label htmlFor="users_name_input">Your Name</label>
           <input
             type="text"
+            name="from_name"
             id="users_name_input"
             className="message_input"
             placeholder="Enter your name"
@@ -40,6 +65,7 @@ const Contact = () => {
           <label htmlFor="email_input">Your Email</label>
           <input
             type="text"
+            name="from_email"
             id="email_input"
             className="message_input"
             placeholder="Enter your Email"
@@ -48,12 +74,13 @@ const Contact = () => {
             Your Message
           </label>
           <textarea
-            name=""
+            name="message"
             id="users_message"
             placeholder="Type your message here."
           ></textarea>
           <div className="btn_container">
             <motion.button
+              type="submit"
               onMouseOver={cursor_hover_handler}
               onMouseLeave={cursor_exit_hover_handler}
               variants={button_variants}

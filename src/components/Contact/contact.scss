@@ -63,6 +63,14 @@ form {
     &:focus {
       outline: none;
     }
+
+    &:-webkit-autofill {
+      color: $primary_200;
+      font-size: $large_font;
+      border: none;
+      border-bottom: 1px solid $primary_300;
+      background: transparent;
+    }
   }
 
   textarea {
