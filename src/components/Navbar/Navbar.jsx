@@ -54,7 +54,7 @@ const Navbar = () => {
             onMouseOver={cursor_hover_handler}
             onMouseLeave={cursor_exit_hover_handler}
             whileHover={{
-              y: -3,
+              y: -6,
               textShadow: "0px 0px 8px rgb(255,255,255)",
             }}
           >

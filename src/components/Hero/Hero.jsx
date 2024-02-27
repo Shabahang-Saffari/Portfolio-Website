@@ -36,8 +36,7 @@ const Hero = () => {
               <small>
                 I am a detail-oriented developer with an insatiable thirst for
                 knowledge, constantly seeking new challenges and opportunities
-                to grow, innovate, and make a lasting impact in the digital
-                landscape.
+                to grow, innovate, and and create a lasting impact.
               </small>
             </p>
             <div className="curlies">{"}"}</div>

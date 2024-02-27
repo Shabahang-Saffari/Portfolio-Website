@@ -59,8 +59,9 @@
   width: 32rem;
   height: 11rem;
   text-transform: none;
-  // text-align: justify;
   color: $primary_300;
+  transition: $transition;
+  // text-align: justify;
   p {
     display: inline;
     // border: 2px solid rgb(211, 226, 0) !important;
@@ -77,6 +78,11 @@
   }
   // border: 2px solid rgb(211, 226, 0) !important;
 }
+
+.light_mode .my_sentence {
+  color: $primary_400;
+}
+
 // .hero_title::before {
 //   content: "";
 //   position: absolute;

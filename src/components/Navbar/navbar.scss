@@ -78,6 +78,8 @@
   flex: 1;
   @include flex_center;
   justify-content: right;
+
+  // border: 2px solid rgb(166, 255, 0) !important;
 }
 .nav_btn_wrapper {
   @include flex_center;
@@ -127,6 +129,7 @@
   li {
     padding-right: 1.25rem;
     text-wrap: nowrap;
+    white-space: nowrap; //For FireFox
     text-decoration: none;
   }
   a {
