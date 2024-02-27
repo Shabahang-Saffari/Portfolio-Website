@@ -1,6 +1,7 @@
 import "./contact.scss";
 import { useGlobalContext } from "../../Context";
 import { motion } from "framer-motion";
+import { ToastContainer, toast } from "react-toastify";
 
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
@@ -41,7 +42,8 @@ const Contact = () => {
       .then(
         () => {
           my_form_ref.current.reset();
-          console.log("SUCCESS!");
+          toast.success("Message sent!", { autoClose: 2000 });
+          // console.log("SUCCESS!");
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -51,6 +53,7 @@ const Contact = () => {
 
   return (
     <div className="contact_page_wrapper" id="contact">
+      <ToastContainer position="top-center" />
       <div className="contact_page_content">
         <h4>Contact Me</h4>
         <form ref={my_form_ref} onSubmit={send_email}>
