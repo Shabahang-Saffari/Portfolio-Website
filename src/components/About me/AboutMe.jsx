@@ -35,8 +35,8 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="right_side_wrapper">
-          <h4>Skills</h4>
           <div className="right_side_content">
+            <h4>Skills</h4>
             <Skill />
           </div>
         </div>
