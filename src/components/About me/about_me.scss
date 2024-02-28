@@ -42,7 +42,7 @@ h4 {
 
 .left_side_wrapper {
   height: 100%;
-  width: 25%;
+  width: 30%;
   height: 100%;
 
   // border: 1px solid yellow;
@@ -50,13 +50,11 @@ h4 {
 .left_side_top {
   width: 100%;
   margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   line-height: 1.3rem;
   // border-radius: $border_radius;
 }
 .left_side_bottom {
-  width: 90%;
-  height: 22rem;
   margin-top: 5%;
   // background: $primary_650;
   border-radius: $border_radius;
@@ -80,7 +78,7 @@ h4 {
 .right_side_wrapper {
   @include flex_center;
   height: 100%;
-  width: 75%;
+  width: 70%;
   text-align: center;
 
   // border: 2px solid rgb(211, 226, 0) !important;
@@ -156,6 +154,8 @@ h4 {
   @include flex_center;
   padding: 0.25rem 0 0.25rem 0;
   color: $primary_100;
+
+  // border: 2px solid rgb(211, 226, 0) !important;
 
   .item {
     flex: 1;
