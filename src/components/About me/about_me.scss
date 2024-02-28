@@ -78,12 +78,15 @@ h4 {
   }
 }
 .right_side_wrapper {
+  @include flex_center;
   height: 100%;
   width: 75%;
   text-align: center;
+
+  // border: 2px solid rgb(211, 226, 0) !important;
 }
 .right_side_content {
-  width: 100%;
+  width: 70%;
   height: 100%;
   border-radius: $border_radius;
   // border: 2px solid rgb(211, 226, 0) !important;
