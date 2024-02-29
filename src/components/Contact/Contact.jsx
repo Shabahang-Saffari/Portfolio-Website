@@ -18,6 +18,10 @@ const button_variants = {
 
 const Contact = () => {
   const my_form_ref = useRef();
+  const user_name_ref = useRef();
+  const user_email_ref = useRef();
+  const user_msg_ref = useRef();
+
   const { hover_on_available, exit_available_hover } = useGlobalContext();
 
   // **************   Available btn   *******************
@@ -35,20 +39,33 @@ const Contact = () => {
   const send_email = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm("service_14s2676", "template_oz2h2mv", my_form_ref.current, {
-        publicKey: "thQNDAzkpkqTIxI_F",
-      })
-      .then(
-        () => {
-          my_form_ref.current.reset();
-          toast.success("Message sent!", { autoClose: 2000 });
-          // console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+    if (
+      user_name_ref.current.value &&
+      user_email_ref.current.value &&
+      user_msg_ref.current.value
+    ) {
+      emailjs
+        .sendForm("service_14s2676", "template_oz2h2mv", my_form_ref.current, {
+          publicKey: "thQNDAzkpkqTIxI_F",
+        })
+        .then(
+          () => {
+            toast.success("Message sent!", { autoClose: 2000 });
+            my_form_ref.current.reset();
+            user_name_ref.current.style.borderBottom = "1px solid #989898";
+            user_email_ref.current.style.borderBottom = "1px solid #989898";
+            user_msg_ref.current.style.borderBottom = "1px solid #989898";
+          },
+          (error) => {
+            toast.error("Message not sent. Please try again");
+          }
+        );
+    } else {
+      toast.error("Please complete all required fields.", { autoClose: 2000 });
+      user_name_ref.current.style.borderBottom = "1px solid #fac09c";
+      user_email_ref.current.style.borderBottom = "1px solid #fac09c";
+      user_msg_ref.current.style.borderBottom = "1px solid #fac09c";
+    }
   };
 
   return (
@@ -59,6 +76,7 @@ const Contact = () => {
         <form ref={my_form_ref} onSubmit={send_email}>
           <label htmlFor="users_name_input">Your Name</label>
           <input
+            ref={user_name_ref}
             type="text"
             name="from_name"
             id="users_name_input"
@@ -67,6 +85,7 @@ const Contact = () => {
           />
           <label htmlFor="email_input">Your Email</label>
           <input
+            ref={user_email_ref}
             type="text"
             name="from_email"
             id="email_input"
@@ -77,6 +96,7 @@ const Contact = () => {
             Your Message
           </label>
           <textarea
+            ref={user_msg_ref}
             name="message"
             id="users_message"
             placeholder="Type your message here."

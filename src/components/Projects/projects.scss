@@ -105,16 +105,17 @@
 .prj_pics_wrapper {
   @include flex_center;
   position: relative;
-  height: 55%;
+  height: 50%;
   width: 95%;
 
   // border: 2px solid rgb(211, 226, 0) !important;
 }
 .desktop_pic {
+  @include flex_center;
   height: 100%;
   width: 100%;
   border-radius: $border_radius;
-  border: 1px solid $primary_300;
+  border: 1px solid $primary_200;
   transition: $transition;
 
   &:hover {
@@ -126,10 +127,10 @@
   bottom: 0;
   right: -10%;
   transform: perspective(50rem) rotateY(-20deg);
-  height: 16rem;
-  width: 12rem;
+  height: 14rem;
+  width: 10rem;
   border-radius: $border_radius;
-  border: 1px solid $primary_300;
+  border: 1px solid $primary_200;
   transition: $transition;
 
   &:hover {
@@ -139,12 +140,12 @@
 .cellphone_pic {
   position: absolute;
   bottom: 0%;
-  left: -10%;
+  left: -5%;
   transform: perspective(50rem) rotateY(30deg);
-  height: 12rem;
-  width: 7rem;
+  height: 11rem;
+  width: 5.5rem;
   border-radius: $border_radius;
-  border: 1px solid $primary_300;
+  border: 1px solid $primary_200;
   transition: $transition;
 
   &:hover {
