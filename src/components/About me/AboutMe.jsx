@@ -7,7 +7,7 @@ const AboutMe = () => {
     <div id="about_me" className="about_me_wrapper">
       <div className="about_me_content">
         <div className="left_side_wrapper">
-          <h4>About Me</h4>
+          <h4 className="page_title">About Me</h4>
           <div className="left_side_top">
             <p>
               I am a passionate individual with a keen interest in coding and

@@ -18,8 +18,8 @@ function App() {
       <Cursor />
       <Navbar />
       <Hero />
-      {/* <AboutMe />
-      <Projects />
+      <AboutMe />
+      {/* <Projects />
       <Contact /> */}
     </main>
   );

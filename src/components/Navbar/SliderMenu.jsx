@@ -16,6 +16,7 @@ const Navlinks = () => {
 
   const links_click_handler = () => {
     toggle_nav_menu();
+    hover_btns_exit();
   };
 
   return (

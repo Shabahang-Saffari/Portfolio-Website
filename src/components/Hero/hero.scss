@@ -57,23 +57,15 @@
   display: none;
 }
 
-.light_mode .my_sentence {
-  color: $primary_400;
-}
-
+// ****************************************
 // ************ Hero Tablet ***************
+// ****************************************
+
 @media screen and (min-width: 600px) {
   .hero_wrapper {
-    overflow: hidden;
-    scroll-snap-align: start;
-    // scroll-snap-stop: always;
-    scroll-margin: 6rem;
-    scroll-behavior: smooth;
-
     margin-top: 6rem;
     height: calc(100vh - 6rem);
-    @include flex_center;
-    text-transform: uppercase;
+
     // border: 2px solid rgb(10, 124, 253) !important;
   }
 
@@ -84,35 +76,9 @@
 
     .hero_title_p1 {
       font-size: 15vw;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      // border: 2px solid rgb(10, 124, 253) !important;
-      line-height: 0.8;
-    }
-    .hero_title_p2 {
-      font-size: 15vw;
-      width: 100%;
-      // border: 2px solid rgb(10, 124, 253) !important;
-    }
-    span {
-      height: 100%;
-      transition: $transition;
-      &:hover {
-        color: $secondary_100;
-        filter: blur(0.2rem);
-      }
     }
   }
 
-  .light_mode .hero_title {
-    span {
-      &:hover {
-        color: $tertiary-300;
-        filter: blur(0.2rem);
-      }
-    }
-  }
   .my_sentence {
     position: absolute;
     top: 0;
@@ -143,74 +109,34 @@
 
   .light_mode .my_sentence {
     color: $primary_400;
+    small {
+      color: $primary_500;
+    }
   }
-
-  // .hero_title::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 95%;
-  //   left: 0%;
-  //   width: 90%;
-  //   height: 15%;
-  //   background: $primary_200;
-  //   transform: perspective(20rem) rotateX(60deg);
-  //   filter: blur(3rem);
-  // }
 }
 
-// ************ Hero Desktop ***************
+// ****************************************
+// ************ Hero Desktop **************
+// ****************************************
+
 @media screen and (min-width: 992px) {
   .hero_wrapper {
-    overflow: hidden;
-    scroll-snap-align: start;
-    // scroll-snap-stop: always;
-    scroll-margin: 6rem;
-    scroll-behavior: smooth;
-
     margin-top: 6rem;
     height: calc(100vh - 6rem);
-    @include flex_center;
-    text-transform: uppercase;
+
     // border: 2px solid rgb(10, 124, 253) !important;
   }
 
   .hero_title {
-    position: relative;
-    // border: 2px solid rgb(211, 226, 0) !important;
-    font-family: "Noto Sans Thai", sans-serif;
-
     .hero_title_p1 {
       display: block;
-      font-size: 15vw;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      // border: 2px solid rgb(10, 124, 253) !important;
-      line-height: 0.8;
-    }
-    .hero_title_p2 {
-      width: 100%;
       // border: 2px solid rgb(10, 124, 253) !important;
     }
     span {
       font-size: 15vw;
-      height: 100%;
-      transition: $transition;
-      &:hover {
-        color: $secondary_100;
-        filter: blur(0.2rem);
-      }
     }
   }
 
-  .light_mode .hero_title {
-    span {
-      &:hover {
-        color: $tertiary-300;
-        filter: blur(0.2rem);
-      }
-    }
-  }
   .my_sentence {
     position: absolute;
     top: 0;
@@ -220,15 +146,19 @@
     height: 11rem;
     text-transform: none;
     color: $primary_300;
+    font-family: "Roboto", sans-serif;
     transition: $transition;
     // text-align: justify;
     p {
       display: inline;
+      font-size: 1.3rem;
       // border: 2px solid rgb(211, 226, 0) !important;
     }
     small {
       display: block;
       margin-top: 0.5rem;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
     }
     .curlies {
       font-family: "Fira Sans", sans-serif;
@@ -241,6 +171,9 @@
 
   .light_mode .my_sentence {
     color: $primary_400;
+    small {
+      color: $primary_500;
+    }
   }
 
   // .hero_title::before {
