@@ -1,7 +1,7 @@
 @import "../../Sass/resets";
 @import "../../Sass/variables";
 @import "../../Sass/functions";
-// ************ Navbar ***************
+
 .nav_wrapper {
   position: fixed;
   top: 0;
@@ -34,21 +34,8 @@
 }
 
 .available_status_wrapper {
+  visibility: hidden;
   flex: 1;
-}
-.available_status {
-  display: inline-block;
-  color: inherit;
-
-  // &:hover {
-  //   font-weight: $font_weight6;
-  // }
-}
-
-.light_mode .available_status {
-  &:hover {
-    color: $tertiary-600;
-  }
 }
 
 .theme_mode_wrapper {
@@ -62,30 +49,22 @@
   }
 }
 
-// .theme_mode_btn {
-//   @include flex_center;
-//   width: 60px;
-//   height: 60px;
-//   border-radius: 50%;
-//   transition: $transition;
-//   &:hover {
-//     background: $primary_400;
-//     color: $primary_100;
-//   }
-//   // border: 2px solid rgb(166, 255, 0) !important;
-// }
-.navlinks_btn_wrapper {
+.slider_menu_wrapper {
   flex: 1;
   @include flex_center;
   justify-content: right;
 
   // border: 2px solid rgb(166, 255, 0) !important;
 }
+.navlinks_btn_wrapper {
+  display: none;
+}
 .nav_btn_wrapper {
   @include flex_center;
-  justify-content: right;
-  height: 1.5rem;
-  width: 1.5rem;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  // border: 2px solid rgb(166, 255, 0) !important;
 }
 .menu_btn {
   position: relative;
@@ -107,9 +86,13 @@
   }
 
   &.close {
+    height: 0.3rem;
+    width: 2.5rem;
     transform: rotate(-135deg);
     &::before {
       transform: rotate(90deg);
+      height: 0.3rem;
+      width: 2.5rem;
     }
     transition: 300ms ease-in-out all;
   }
@@ -122,26 +105,128 @@
   }
 }
 
-.nav_links {
+.slider_links {
+  position: fixed;
+  top: 0rem;
+  right: 0;
+  height: calc(100%);
+  width: 100%;
+  background: $primary_700;
   @include flex_center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
   // border: 2px solid yellow;
   li {
-    padding-right: 1.25rem;
     text-wrap: nowrap;
     white-space: nowrap; //For FireFox
     text-decoration: none;
   }
   a {
     color: inherit;
+    font-size: $xlarge_font;
   }
+  // border: 2px solid rgb(10, 124, 253) !important;
+}
+
+.light_mode .slider_links {
+  background: $primary_100;
   a:hover {
-    font-weight: $font_weight6;
+    color: $tertiary-600;
   }
 }
 
-.light_mode .nav_links {
-  a:hover {
-    color: $tertiary-600;
+// *******************************************
+// ************ Navbar Desktop ***************
+// *******************************************
+
+@media screen and (min-width: 992px) {
+  .available_status_wrapper {
+    visibility: visible;
+    flex: 1;
+  }
+  .available_status {
+    display: inline-block;
+    color: inherit;
+    // &:hover {
+    //   font-weight: $font_weight6;
+    // }
+  }
+
+  .light_mode .available_status {
+    &:hover {
+      color: $tertiary-600;
+    }
+  }
+
+  .slider_menu_wrapper {
+    display: none;
+  }
+  .navlinks_btn_wrapper {
+    flex: 1;
+    @include flex_center;
+    justify-content: right;
+
+    // border: 2px solid rgb(166, 255, 0) !important;
+  }
+  .nav_btn_wrapper {
+    @include flex_center;
+    justify-content: right;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .menu_btn {
+    position: relative;
+    height: 0.15rem;
+    width: 1.35rem;
+    border-radius: 25px;
+    background: $primary_200;
+    transition: $transition;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 0.15rem;
+      width: 1.35rem;
+      border-radius: 25px;
+      transform: rotate(90deg);
+      background: $primary_200;
+      transition: 300ms ease-in-out all;
+    }
+
+    &.close {
+      transform: rotate(-135deg);
+      height: 0.15rem;
+      width: 1.35rem;
+      &::before {
+        height: 0.15rem;
+        width: 1.35rem;
+        transform: rotate(90deg);
+      }
+      transition: 300ms ease-in-out all;
+    }
+  }
+
+  .nav_links {
+    @include flex_center;
+    justify-content: space-between;
+    // border: 2px solid yellow;
+    li {
+      padding-right: 1.25rem;
+      text-wrap: nowrap;
+      white-space: nowrap; //For FireFox
+      text-decoration: none;
+    }
+    a {
+      color: inherit;
+    }
+    a:hover {
+      font-weight: $font_weight6;
+    }
+  }
+
+  .light_mode .nav_links {
+    a:hover {
+      color: $tertiary-600;
+    }
   }
 }

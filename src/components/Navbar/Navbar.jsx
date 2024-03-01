@@ -1,4 +1,5 @@
 import Navlinks from "./Navlinks";
+import SliderMenu from "./SliderMenu";
 import { useGlobalContext } from "../../Context";
 import { motion, AnimatePresence } from "framer-motion";
 import "./navbar.scss";
@@ -83,6 +84,20 @@ const Navbar = () => {
         </div>
         <div className="navlinks_btn_wrapper">
           <AnimatePresence>{nav_menu && <Navlinks />}</AnimatePresence>
+
+          <motion.div
+            className="nav_btn_wrapper"
+            onClick={nav_menu_btn_handler}
+            whileHover={{
+              scale: 1.4,
+            }}
+          >
+            <span className={nav_menu ? "menu_btn close" : "menu_btn"}></span>
+          </motion.div>
+        </div>
+        {/* ***** Slider Menu ****** */}
+        <div className="slider_menu_wrapper">
+          <AnimatePresence>{nav_menu && <SliderMenu />}</AnimatePresence>
 
           <motion.div
             className="nav_btn_wrapper"

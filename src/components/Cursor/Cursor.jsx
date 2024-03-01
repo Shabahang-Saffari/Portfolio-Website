@@ -23,7 +23,7 @@ const Cursor = () => {
   };
 
   return (
-    <div>
+    <div className="cursor_wrapper">
       <div className="my_cursor" style={cursorStyle}></div>
       <motion.div
         className={
@@ -35,10 +35,10 @@ const Cursor = () => {
         }
         animate={
           btns_hover
-            ? { x: position.x - 12.5, y: position.y - 109, scale: 2.5 }
+            ? { x: position.x - 12.5, y: position.y - 12, scale: 2.5 }
             : available_hover
-            ? { x: position.x - 50, y: position.y - 105, scale: 2.5 }
-            : { x: position.x - 12.5, y: position.y - 109 }
+            ? { x: position.x - 45, y: position.y - 8, scale: 2.5 }
+            : { x: position.x - 12, y: position.y - 12 }
         }
       ></motion.div>
     </div>
