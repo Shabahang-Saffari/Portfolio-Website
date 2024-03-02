@@ -6,9 +6,9 @@ const AboutMe = () => {
   return (
     <div id="about_me" className="about_me_wrapper">
       <div className="about_me_content">
-        <div className="left_side_wrapper">
-          <h4 className="page_title">About Me</h4>
-          <div className="left_side_top">
+        <div className="about_education_wrapper">
+          <div className="about_me_section">
+            <h4 className="page_title">About Me</h4>
             <p>
               I am a passionate individual with a keen interest in coding and
               the art of crafting clean and efficient code. I believe in the
@@ -20,12 +20,12 @@ const AboutMe = () => {
               joy in problem-solving. */}
             </p>
           </div>
-          <div className="left_side_bottom">
+          <div className="education_section">
             <h4>Education</h4>
             <ul>
               <li>Bachelor of Computer Software Engineering</li>
               <p>May 2012, Islamic Azad University, Tehran, Iran</p>
-              <li>Python Programing (A)</li>
+              <li>Python Programing (Grade A)</li>
               <p>Fall 2022, BCIT, BC, Canada </p>
               <li>NodeJS</li>
               <p>Udemy Certificate</p>
@@ -34,8 +34,8 @@ const AboutMe = () => {
             </ul>
           </div>
         </div>
-        <div className="right_side_wrapper">
-          <div className="right_side_content">
+        <div className="skill_section_wrapper">
+          <div className="skill_section_content">
             <h4>Skills</h4>
             <Skill />
           </div>
