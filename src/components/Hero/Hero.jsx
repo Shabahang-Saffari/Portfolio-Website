@@ -34,10 +34,10 @@ const Hero = () => {
             <p>
               Transforming lines of code into innovative solutions.
               <small>
-                My name is Shab. I am a detail-oriented developer dedicated to
-                crafting seamless user experiences and scalable applications,
-                actively seeking new challenges and opportunities to grow,
-                innovate, and create a lasting impact.
+                I am a detail-oriented developer dedicated to crafting seamless
+                user experiences and scalable applications, actively seeking new
+                challenges and opportunities to grow, innovate, and create a
+                lasting impact.
               </small>
             </p>
             <div className="curlies">{"}"}</div>

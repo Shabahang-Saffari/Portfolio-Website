@@ -1,14 +1,16 @@
 @import "../../Sass/resets";
 @import "../../Sass/variables";
 @import "../../Sass/functions";
-// ************ Project ***************
 
 .project_page_wrapper {
+  overflow: hidden;
   scroll-margin: 6rem;
-  scroll-snap-align: start;
   font-family: "Roboto", sans-serif;
+  color: $primary_300;
   letter-spacing: 1px;
   height: calc(100vh - 6rem);
+  scroll-snap-align: start;
+  transition: $transition;
   // border: 2px solid rgb(211, 226, 0) !important;
 }
 
@@ -19,7 +21,7 @@
   align-items: center;
   gap: 2rem;
   width: calc(100vw - 4rem);
-  margin: 2rem auto;
+  margin: 0 auto;
   margin-bottom: 1rem;
   height: calc(100% - 1rem);
   // background: $primary_200;
@@ -27,25 +29,29 @@
   h4 {
     width: 100%;
     text-align: left;
-    font-size: $title_font;
-    font-weight: $font_weight3;
+    font-size: $xlarge_font;
+    font-weight: $font_weight4;
     text-transform: uppercase;
     color: $primary_100;
     // border: 2px solid rgb(211, 226, 0) !important;
   }
 }
 
+.light_mode h4 {
+  color: $primary_500;
+}
+
 .project_wrapper {
   @include flex_center;
-  width: 70%;
+  flex-direction: column;
+  width: 100%;
   height: 75%;
-  border-radius: $border_radius;
-  background: $primary_650;
+  // background: $primary_650;
   // border: 2px solid rgb(211, 226, 0) !important;
 }
 .left_side {
   height: 100%;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,20 +59,26 @@
   // border: 2px solid rgb(211, 226, 0) !important;
 }
 .project_title {
-  font-size: $xhuge_font;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  font-size: $title_font;
+  margin-bottom: 1rem;
+  color: $primary_300;
+  text-decoration: underline;
 }
+
+.light_mode .project_title {
+  color: $primary_400;
+}
+
 .prj_description {
-  margin: 1rem 5rem 1rem 1rem;
   letter-spacing: 1px;
   line-height: 1.3rem;
+  color: $primary_200;
 }
 .techs_stack {
   display: flex;
-  gap: 1.5rem;
-  margin: 2rem 5rem 2rem 1rem;
-
+  justify-content: space-between;
+  margin: 2rem 0 2rem 0;
+  color: $primary_100;
   li {
     @include flex_center;
     flex-direction: column;
@@ -83,7 +95,7 @@
   @include flex_center;
   flex-direction: column;
   height: 100%;
-  width: 50%;
+  width: 100%;
 
   // border: 2px solid rgb(211, 226, 0) !important;
   .my_links {
@@ -98,57 +110,289 @@
   }
   a {
     display: inline-block;
-    color: inherit;
+    color: $primary_100;
     font-size: $large_font;
+    padding: 0.5rem;
+    border: 2px solid $primary_200;
+    border-radius: 10px;
+
+    &:hover {
+      border: 2px solid $secondary_100;
+    }
   }
+}
+.light_mode a {
+  color: $primary_500;
 }
 .prj_pics_wrapper {
-  @include flex_center;
-  position: relative;
-  height: 50%;
-  width: 95%;
-
+  display: none;
   // border: 2px solid rgb(211, 226, 0) !important;
 }
-.desktop_pic {
-  @include flex_center;
-  height: 100%;
-  width: 100%;
-  border-radius: $border_radius;
-  border: 1px solid $primary_200;
-  transition: $transition;
 
-  &:hover {
-    filter: invert(100%) blur(0.1rem);
+// ************************************
+// ************ Tablet ***************
+// ************************************
+@media screen and (min-width: 700px) {
+  .project_page_content {
+    gap: 0;
+    margin: 0 auto;
+    // border: 2px solid rgb(211, 226, 0) !important;
+    h4 {
+      font-size: $title_font;
+      margin-bottom: 1rem;
+      // border: 2px solid rgb(211, 226, 0) !important;
+    }
+  }
+  .project_wrapper {
+    @include flex_center;
+    flex-direction: column;
+    width: 100%;
+    height: 85%;
+    border-radius: $border_radius;
+    background: $primary_650;
+
+    // border: 2px solid rgb(211, 226, 0) !important;
+  }
+  .light_mode .project_wrapper {
+    background: $primary_200;
+  }
+  .left_side {
+    width: 100%;
+    // border: 2px solid rgb(211, 226, 0) !important;
+  }
+  .project_title {
+    font-size: $title_font;
+    margin: 1rem 1rem 0 1rem;
+  }
+  .light_mode .project_title {
+    color: $primary_500;
+  }
+  .prj_description {
+    margin: 1rem;
+    font-size: $base_font;
+    font-weight: $font_weight5;
+  }
+  .techs_stack {
+    display: flex;
+    justify-content: space-between;
+    font-weight: $font_weight5;
+    margin: 2rem 1rem;
+  }
+
+  .right_side {
+    width: 100%;
+    // border: 2px solid rgb(211, 226, 0) !important;
+    a {
+      color: inherit;
+      border: none;
+
+      &:hover {
+        border: none;
+        color: $secondary_100;
+      }
+    }
+  }
+  .light_mode .right_side {
+    a {
+      &:hover {
+        border: none;
+        color: $tertiary-600;
+      }
+    }
+  }
+
+  @media screen and (min-height: 800px) {
+    .prj_pics_wrapper {
+      @include flex_center;
+      position: relative;
+      height: 58%;
+      width: 80%;
+
+      // border: 2px solid rgb(211, 226, 0) !important;
+    }
+    .desktop_pic {
+      @include flex_center;
+      height: 100%;
+      width: 100%;
+      border-radius: $border_radius;
+      border: 1px solid $primary_200;
+      transition: $transition;
+
+      &:hover {
+        filter: invert(100%) blur(0.1rem);
+      }
+    }
+
+    .light_mode .desktop_pic {
+      border: 1px solid $primary_300;
+
+      filter: invert(100%);
+      &:hover {
+        filter: invert(0%) blur(0.1rem);
+      }
+    }
+
+    .tablet_pic {
+      position: absolute;
+      bottom: 0;
+      right: -10%;
+      transform: perspective(50rem) rotateY(-20deg);
+      height: 14rem;
+      width: 10rem;
+      border-radius: $border_radius;
+      border: 1px solid $primary_200;
+      transition: $transition;
+
+      &:hover {
+        filter: invert(100%) blur(0.1rem);
+      }
+    }
+
+    .light_mode .tablet_pic {
+      border: 1px solid $primary_300;
+
+      filter: invert(100%);
+      &:hover {
+        filter: invert(0%) blur(0.1rem);
+      }
+    }
+
+    .cellphone_pic {
+      position: absolute;
+      bottom: 0%;
+      left: -5%;
+      transform: perspective(50rem) rotateY(30deg);
+      height: 11rem;
+      width: 5.5rem;
+      border-radius: $border_radius;
+      border: 1px solid $primary_200;
+      transition: $transition;
+
+      &:hover {
+        filter: invert(100%) blur(0.1rem);
+      }
+    }
+
+    .light_mode .cellphone_pic {
+      border: 1px solid $primary_300;
+
+      filter: invert(100%);
+      &:hover {
+        filter: invert(0%) blur(0.1rem);
+      }
+    }
   }
 }
-.tablet_pic {
-  position: absolute;
-  bottom: 0;
-  right: -10%;
-  transform: perspective(50rem) rotateY(-20deg);
-  height: 14rem;
-  width: 10rem;
-  border-radius: $border_radius;
-  border: 1px solid $primary_200;
-  transition: $transition;
 
-  &:hover {
-    filter: invert(100%) blur(0.1rem);
+// ************************************
+// ************ Desktop ***************
+// ************************************
+@media screen and (min-width: 1300px) {
+  .project_wrapper {
+    @include flex_center;
+    flex-direction: row;
+    width: 70%;
+    height: 75%;
+    // border: 2px solid rgb(211, 226, 0) !important;
   }
-}
-.cellphone_pic {
-  position: absolute;
-  bottom: 0%;
-  left: -5%;
-  transform: perspective(50rem) rotateY(30deg);
-  height: 11rem;
-  width: 5.5rem;
-  border-radius: $border_radius;
-  border: 1px solid $primary_200;
-  transition: $transition;
+  .left_side {
+    width: 50%;
+    // border: 2px solid rgb(211, 226, 0) !important;
+  }
+  .project_title {
+    font-size: $xhuge_font;
+    color: $primary_200;
+  }
+  .prj_description {
+    margin: 1rem 5rem 1rem 1rem;
+  }
+  .techs_stack {
+    display: flex;
+    margin: 2rem 5rem 2rem 1rem;
+  }
 
-  &:hover {
-    filter: invert(100%) blur(0.1rem);
+  .right_side {
+    width: 50%;
+
+    // border: 2px solid rgb(211, 226, 0) !important;
+  }
+  .prj_pics_wrapper {
+    @include flex_center;
+    position: relative;
+    height: 50%;
+    width: 95%;
+
+    // border: 2px solid rgb(211, 226, 0) !important;
+  }
+  .desktop_pic {
+    @include flex_center;
+    height: 100%;
+    width: 100%;
+    border-radius: $border_radius;
+    border: 1px solid $primary_200;
+    transition: $transition;
+
+    &:hover {
+      filter: invert(100%) blur(0.1rem);
+    }
+  }
+
+  .light_mode .desktop_pic {
+    border: 1px solid $primary_300;
+
+    filter: invert(100%);
+    &:hover {
+      filter: invert(0%) blur(0.1rem);
+    }
+  }
+
+  .tablet_pic {
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+    transform: perspective(50rem) rotateY(-20deg);
+    height: 14rem;
+    width: 10rem;
+    border-radius: $border_radius;
+    border: 1px solid $primary_200;
+    transition: $transition;
+
+    &:hover {
+      filter: invert(100%) blur(0.1rem);
+    }
+  }
+
+  .light_mode .tablet_pic {
+    border: 1px solid $primary_300;
+
+    filter: invert(100%);
+    &:hover {
+      filter: invert(0%) blur(0.1rem);
+    }
+  }
+
+  .cellphone_pic {
+    position: absolute;
+    bottom: 0%;
+    left: -5%;
+    transform: perspective(50rem) rotateY(30deg);
+    height: 11rem;
+    width: 5.5rem;
+    border-radius: $border_radius;
+    border: 1px solid $primary_200;
+    transition: $transition;
+
+    &:hover {
+      filter: invert(100%) blur(0.1rem);
+    }
+  }
+
+  .light_mode .cellphone_pic {
+    border: 1px solid $primary_300;
+
+    filter: invert(100%);
+    &:hover {
+      filter: invert(0%) blur(0.1rem);
+    }
   }
 }

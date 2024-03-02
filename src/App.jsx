@@ -19,8 +19,8 @@ function App() {
       <Navbar />
       <Hero />
       <AboutMe />
-      {/* <Projects />
-      <Contact /> */}
+      <Projects />
+      <Contact />
     </main>
   );
 }

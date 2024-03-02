@@ -84,7 +84,7 @@
     top: 0;
     right: 0;
     @include flex_center;
-    width: 25rem;
+    width: 28rem;
     height: 11rem;
     text-transform: none;
     color: $primary_300;
@@ -97,6 +97,7 @@
     small {
       display: block;
       margin-top: 0.5rem;
+      font-size: 0.8rem;
     }
     .curlies {
       font-family: "Fira Sans", sans-serif;
@@ -157,7 +158,7 @@
     small {
       display: block;
       margin-top: 0.5rem;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       letter-spacing: 1px;
     }
     .curlies {

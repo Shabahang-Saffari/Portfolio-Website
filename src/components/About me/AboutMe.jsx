@@ -10,10 +10,11 @@ const AboutMe = () => {
           <div className="about_me_section">
             <h4 className="page_title">About Me</h4>
             <p>
-              I am a passionate individual with a keen interest in coding and
-              the art of crafting clean and efficient code. I believe in the
-              power of technology to create elegant solutions, and I am always
-              eager to explore new challenges in the world of coding.
+              My name is Shabahang. I am a passionate individual with a keen
+              interest in coding and the art of crafting clean and efficient
+              code. I believe in the power of technology to create elegant
+              solutions, and I am always eager to explore new challenges in the
+              world of coding.
               {/* I am a
               highly skilled and dedicated developer, holding a bachelor's
               degree in the field. I am enthusiastic about programming and find
