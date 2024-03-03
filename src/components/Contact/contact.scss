@@ -13,8 +13,8 @@
 // ****************************************
 .contact_page_wrapper {
   overflow: hidden;
-  scroll-margin: 6rem;
-  scroll-snap-align: start;
+  scroll-margin: -6rem;
+  scroll-snap-align: end;
   font-family: "Roboto", sans-serif;
   color: $primary_300;
   letter-spacing: 1px;
@@ -162,8 +162,8 @@ textarea {
 
 @media screen and (min-width: 600px) {
   .contact_page_wrapper {
-    scroll-margin: 6rem;
-    scroll-snap-align: start;
+    scroll-margin: 0;
+    scroll-snap-align: end;
     font-family: "Roboto", sans-serif;
     letter-spacing: 1px;
     height: calc(100vh - 6rem);

@@ -4,12 +4,12 @@
 
 .about_me_wrapper {
   overflow: hidden;
-  scroll-margin: 6rem;
   font-family: "Roboto", sans-serif;
   color: $primary_300;
   letter-spacing: 1px;
   height: calc(100vh - 6rem);
-  scroll-snap-align: start;
+  scroll-margin: -6rem;
+  scroll-snap-align: end;
   transition: $transition;
   // border: 2px solid rgb(211, 226, 0) !important;
 
@@ -159,6 +159,9 @@ h4 {
 // ************    Tablet   **************
 // ****************************************
 @media screen and (min-width: 768px) {
+  .about_me_wrapper {
+    scroll-margin: 0;
+  }
   .about_education_wrapper {
     display: flex;
     width: 100%;
@@ -189,12 +192,12 @@ h4 {
 // ****************************************
 @media screen and (min-width: 992px) {
   .about_me_wrapper {
-    scroll-margin: 6rem;
     font-family: "Roboto", sans-serif;
     color: $primary_300;
     letter-spacing: 1px;
     height: calc(100vh - 6rem);
-    scroll-snap-align: start;
+    scroll-margin: 0;
+    scroll-snap-align: end;
     transition: $transition;
     // border: 2px solid rgb(211, 226, 0) !important;
 

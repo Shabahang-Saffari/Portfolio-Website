@@ -4,12 +4,13 @@
 
 .project_page_wrapper {
   overflow: hidden;
-  scroll-margin: 6rem;
   font-family: "Roboto", sans-serif;
   color: $primary_300;
   letter-spacing: 1px;
   height: calc(100vh - 6rem);
-  scroll-snap-align: start;
+  scroll-margin: -6rem;
+  scroll-snap-align: end;
+  // scroll-snap-stop: always;
   transition: $transition;
   // border: 2px solid rgb(211, 226, 0) !important;
 }
@@ -136,6 +137,7 @@
   .project_page_content {
     gap: 0;
     margin: 0 auto;
+    scroll-margin: 0;
     // border: 2px solid rgb(211, 226, 0) !important;
     h4 {
       font-size: $title_font;
@@ -288,6 +290,9 @@
 // ************ Desktop ***************
 // ************************************
 @media screen and (min-width: 1300px) {
+  .project_page_wrapper {
+    scroll-margin: 0;
+  }
   .project_wrapper {
     @include flex_center;
     flex-direction: row;

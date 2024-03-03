@@ -4,10 +4,9 @@
 
 .hero_wrapper {
   overflow: hidden;
-  scroll-snap-align: start;
+  scroll-snap-align: end;
   // scroll-snap-stop: always;
-  scroll-margin: 6rem;
-  scroll-behavior: smooth;
+  scroll-margin: -6rem;
 
   height: calc(100vh);
   @include flex_center;
@@ -63,6 +62,7 @@
 
 @media screen and (min-width: 600px) {
   .hero_wrapper {
+    scroll-margin: 0;
     margin-top: 6rem;
     height: calc(100vh - 6rem);
 
@@ -122,6 +122,7 @@
 
 @media screen and (min-width: 992px) {
   .hero_wrapper {
+    scroll-margin: 0;
     margin-top: 6rem;
     height: calc(100vh - 6rem);
 
