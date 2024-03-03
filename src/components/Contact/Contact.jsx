@@ -22,7 +22,8 @@ const Contact = () => {
   const user_email_ref = useRef();
   const user_msg_ref = useRef();
 
-  const { hover_on_available, exit_available_hover } = useGlobalContext();
+  const { hover_on_available, exit_available_hover, dark_mode } =
+    useGlobalContext();
 
   // **************   Available btn   *******************
 
@@ -50,18 +51,42 @@ const Contact = () => {
         })
         .then(
           () => {
-            toast.success("Message sent!", { autoClose: 2000 });
+            if (dark_mode) {
+              toast.success("Message sent!");
+            }
+
+            if (!dark_mode) {
+              toast.success("Message sent!", {
+                theme: "dark",
+              });
+            }
             my_form_ref.current.reset();
             user_name_ref.current.style.borderBottom = "1px solid #989898";
             user_email_ref.current.style.borderBottom = "1px solid #989898";
             user_msg_ref.current.style.borderBottom = "1px solid #989898";
           },
           (error) => {
-            toast.error("Message not sent. Please try again");
+            if (dark_mode) {
+              toast.error("Message not sent. Please try again.");
+            }
+
+            if (!dark_mode) {
+              toast.error("Message not sent. Please try again.", {
+                theme: "dark",
+              });
+            }
           }
         );
     } else {
-      toast.error("Please complete all required fields.", { autoClose: 2000 });
+      if (dark_mode) {
+        toast.error("Please complete all required fields.");
+      }
+
+      if (!dark_mode) {
+        toast.error("Please complete all required fields.", {
+          theme: "dark",
+        });
+      }
       user_name_ref.current.style.borderBottom = "1px solid #fac09c";
       user_email_ref.current.style.borderBottom = "1px solid #fac09c";
       user_msg_ref.current.style.borderBottom = "1px solid #fac09c";
@@ -70,7 +95,12 @@ const Contact = () => {
 
   return (
     <div className="contact_page_wrapper" id="contact">
-      <ToastContainer position="top-center" />
+      <ToastContainer
+        position="top-center"
+        autoClose={2000}
+        draggable
+        closeOnClick
+      />
       <div className="contact_page_content">
         <h4>Contact Me</h4>
         <form ref={my_form_ref} onSubmit={send_email}>
