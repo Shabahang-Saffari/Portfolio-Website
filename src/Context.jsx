@@ -67,7 +67,7 @@ export const AppProvider = ({ children }) => {
         exit_available_hover,
       }}
     >
-      {children};
+      {children}
     </AppContext.Provider>
   );
 };
