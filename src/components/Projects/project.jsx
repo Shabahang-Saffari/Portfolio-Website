@@ -1,6 +1,6 @@
 import { useGlobalContext } from "../../Context";
 import { projects } from "../data";
-import { motion, spring } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Project = () => {
   const { hover_btns, hover_btns_exit } = useGlobalContext();
