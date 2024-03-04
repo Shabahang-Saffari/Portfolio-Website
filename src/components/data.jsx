@@ -154,7 +154,7 @@ export const skills = [
 // *******  Projects *******
 // *************************
 
-export const projects = [
+export const my_projects = [
   {
     id: nanoid(),
     name: "BugTracker",

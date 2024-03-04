@@ -20,7 +20,7 @@ function App() {
       <Navbar />
       <Hero />
       <AboutMe />
-      {/* <Projects /> */}
+      <Projects />
       <Contact />
       <Cursor />
     </main>

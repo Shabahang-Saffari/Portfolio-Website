@@ -1,5 +1,5 @@
 import { useGlobalContext } from "../../Context";
-import { projects } from "../data";
+import { my_projects } from "../data";
 import { motion } from "framer-motion";
 
 export const Project = () => {
@@ -12,7 +12,7 @@ export const Project = () => {
     hover_btns_exit();
   };
 
-  return projects.map((project) => {
+  return my_projects.map((project) => {
     const {
       id,
       name,
