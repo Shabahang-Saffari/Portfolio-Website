@@ -2,7 +2,7 @@ import { useGlobalContext } from "../../Context";
 import { projects } from "../data";
 import { motion } from "framer-motion";
 
-const Project = () => {
+export const Project = () => {
   const { hover_btns, hover_btns_exit } = useGlobalContext();
   const links_cursor_hover_handler = () => {
     hover_btns();
@@ -92,4 +92,4 @@ const Project = () => {
     );
   });
 };
-export default Project;
+// export default Project;
