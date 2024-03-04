@@ -22,10 +22,10 @@ const Contact = () => {
   const user_email_ref = useRef();
   const user_msg_ref = useRef();
 
-  const { hover_on_available, exit_available_hover, dark_mode } =
+  const { hover_on_available, exit_available_hover, dark_mode, activate_page } =
     useGlobalContext();
 
-  // **************   Available btn   *******************
+  // **************   Send btn Effect  ***************
 
   const cursor_hover_handler = () => {
     hover_on_available();
@@ -34,6 +34,8 @@ const Contact = () => {
   const cursor_exit_hover_handler = () => {
     exit_available_hover();
   };
+
+  // **************   Acitvate Page   ****************
 
   // **************   Send Email   *******************
 

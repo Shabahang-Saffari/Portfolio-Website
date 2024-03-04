@@ -1,3 +1,5 @@
+import { useGlobalContext } from "../../Context";
+import { useEffect } from "react";
 import { nanoid } from "nanoid";
 import { motion } from "framer-motion";
 import "./hero.scss";
@@ -8,6 +10,32 @@ const hero_title_array1 = hero_title_p1.split("");
 const hero_title_array2 = hero_title_p2.split("");
 
 const Hero = () => {
+  const { activate_page, active_page } = useGlobalContext();
+
+  // **************   Acitvate Page   ****************
+  useEffect(() => {
+    const handle_scroll = () => {
+      const page_height = window.innerHeight;
+      const scroll_position = window.scrollY;
+      let new_active_page = Math.ceil((scroll_position + 1) / page_height);
+      if (scroll_position === 0) {
+        new_active_page = 0;
+      }
+      // console.log("scroll_position", scroll_position);
+      // console.log("page_height", page_height);
+      // console.log("new_active_page", new_active_page);
+
+      if (new_active_page !== active_page) {
+        activate_page(new_active_page);
+      }
+    };
+    window.addEventListener("scroll", handle_scroll);
+    return () => {
+      window.removeEventListener("scroll", handle_scroll);
+    };
+  }, [active_page]);
+  // *************************************************
+
   return (
     <div id="home" className="hero_wrapper">
       <div className="hero_title_wrapper">

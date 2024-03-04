@@ -6,6 +6,7 @@ import {
   BTNS_EXIT_HOVERING,
   AVAILABLE_HOVERING,
   EXIT_AVAILABLE_HOVERING,
+  ACTIVATE_PAGE,
 } from "./actions";
 
 const reducer = (state, action) => {
@@ -30,6 +31,9 @@ const reducer = (state, action) => {
 
     case EXIT_AVAILABLE_HOVERING:
       return { ...state, available_hover: false };
+
+    case ACTIVATE_PAGE:
+      return { ...state, active_page: action.payload.page_id };
 
     default:
       throw new Error(`Requested action type: ${action.type} not found!`);

@@ -7,6 +7,7 @@ import {
   BTNS_EXIT_HOVERING,
   AVAILABLE_HOVERING,
   EXIT_AVAILABLE_HOVERING,
+  ACTIVATE_PAGE,
 } from "./actions";
 import reducer from "./reducer";
 
@@ -19,6 +20,7 @@ const initialState = {
   nav_menu: false,
   btns_hover: false,
   available_hover: false,
+  active_page: 0,
 };
 
 export const AppProvider = ({ children }) => {
@@ -54,6 +56,11 @@ export const AppProvider = ({ children }) => {
     dispatch({ type: EXIT_AVAILABLE_HOVERING });
   };
 
+  // ****** Acitivating Page ********
+  const activate_page = (page_id) => {
+    dispatch({ type: ACTIVATE_PAGE, payload: { page_id } });
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -65,6 +72,7 @@ export const AppProvider = ({ children }) => {
         hover_btns_exit,
         hover_on_available,
         exit_available_hover,
+        activate_page,
       }}
     >
       {children}

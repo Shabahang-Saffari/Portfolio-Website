@@ -40,22 +40,22 @@ import { nanoid } from "nanoid";
 
 export const inner_links = [
   {
-    id: nanoid(),
+    id: 0,
     href: "#home",
     text: "home",
   },
   {
-    id: nanoid(),
+    id: 1,
     href: "#about_me",
     text: "About Me",
   },
   {
-    id: nanoid(),
+    id: 2,
     href: "#project",
     text: "projects",
   },
   {
-    id: nanoid(),
+    id: 3,
     href: "#contact",
     text: "contact",
   },

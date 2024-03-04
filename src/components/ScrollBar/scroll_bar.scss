@@ -1,0 +1,49 @@
+@import "../../Sass/resets";
+@import "../../Sass/variables";
+@import "../../Sass/functions";
+
+.scroll_bar {
+  position: static;
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .scroll_bar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    // transition: $transition;
+
+    // border: 1px solid yellow;
+
+    a {
+      display: block;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      // background: $primary_100;
+      border: 2px solid $primary_200;
+      transition: $transition;
+
+      &:hover {
+        border: 2px solid $secondary_100;
+        border-radius: 0;
+        transform: rotate(180deg);
+      }
+    }
+    .active_page {
+      height: 18px;
+      width: 18px;
+      border: 2px solid $primary_100;
+      border-radius: 0;
+      box-shadow: 0 0 5px 1px $primary_300;
+      transition: 0.5s ease-in-out;
+      transform: rotate(315deg);
+    }
+  }
+}
