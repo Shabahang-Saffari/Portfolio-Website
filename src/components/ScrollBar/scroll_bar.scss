@@ -17,7 +17,6 @@
     right: 2rem;
     top: 50%;
     transform: translateY(-50%);
-    // transition: $transition;
 
     // border: 1px solid yellow;
 
@@ -44,6 +43,34 @@
       box-shadow: 0 0 5px 1px $primary_300;
       transition: 0.5s ease-in-out;
       transform: rotate(315deg);
+    }
+  }
+  .light_mode {
+    .scroll_bar {
+      a {
+        display: block;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        // background: $primary_100;
+        border: 2px solid $primary_400;
+        transition: $transition;
+
+        &:hover {
+          border: 2px solid $tertiary-400;
+          border-radius: 0;
+          transform: rotate(180deg);
+        }
+      }
+      .active_page {
+        height: 18px;
+        width: 18px;
+        border: 2px solid $primary_400;
+        border-radius: 0;
+        box-shadow: 0 0 5px 1px $primary_400;
+        transition: 0.5s ease-in-out;
+        transform: rotate(315deg);
+      }
     }
   }
 }
