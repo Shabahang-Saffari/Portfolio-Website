@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Footer from "./Footer";
 
 const button_variants = {
   hover: {
@@ -146,6 +147,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
+      <Footer />
     </div>
   );
 };

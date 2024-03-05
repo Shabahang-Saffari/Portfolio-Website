@@ -12,6 +12,7 @@
 
 // ****************************************
 .contact_page_wrapper {
+  position: relative;
   overflow: hidden;
   scroll-margin: -6rem;
   scroll-snap-align: end;
@@ -196,15 +197,15 @@ textarea {
   form {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 70%;
-    height: 85%;
     margin-top: 0;
     border-radius: $border_radius;
     // border: 2px solid rgb(211, 226, 0) !important;
 
     label {
       font-size: $large_font;
-      color: $primary_300;
+      color: $primary_200;
       margin-bottom: 1rem;
     }
     input {
@@ -252,13 +253,13 @@ textarea {
     }
     .btn_container {
       @include flex_center;
+      color: $primary_200;
     }
     button {
       height: 2rem;
       width: 20rem;
 
-      font-size: $xlarge_font;
-      color: $primary_200;
+      // font-size: $xlarge_font;
       text-transform: uppercase;
       border: none;
       background: transparent;

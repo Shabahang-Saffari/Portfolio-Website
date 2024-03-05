@@ -175,3 +175,14 @@ export const my_projects = [
     pic3: BugTracker_cellphone,
   },
 ];
+// ************ Portfolio Tech Used ***********
+export const my_website = {
+  name: "Portfolio Website",
+  techs: [
+    { id: nanoid(), name: "HTML5", icon: <FaHtml5 /> },
+    { id: nanoid(), name: "CSS3", icon: <FaCss3Alt /> },
+    { id: nanoid(), name: "SASS", icon: <SiSass /> },
+    { id: nanoid(), name: "React", icon: <FaReact /> },
+    { id: nanoid(), name: "Git", icon: <FaGitAlt /> },
+  ],
+};
