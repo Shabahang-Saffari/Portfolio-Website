@@ -1,4 +1,4 @@
-import { Project } from "./Project";
+import { Proj } from "./Proj";
 import "./projects.scss";
 
 const Projects = () => {
@@ -6,7 +6,7 @@ const Projects = () => {
     <div className="project_page_wrapper" id="project">
       <div className="project_page_content">
         <h4>Projects</h4>
-        <Project />
+        <Proj />
       </div>
     </div>
   );
