@@ -8,6 +8,8 @@ import {
   AVAILABLE_HOVERING,
   EXIT_AVAILABLE_HOVERING,
   ACTIVATE_PAGE,
+  SCOROLL_BAR_HOVER,
+  EXIT_SCOROLL_BAR_HOVER,
 } from "./actions";
 import reducer from "./reducer";
 
@@ -21,6 +23,7 @@ const initialState = {
   btns_hover: false,
   available_hover: false,
   active_page: 0,
+  scroll_bar_hvr: false,
 };
 
 export const AppProvider = ({ children }) => {
@@ -61,6 +64,15 @@ export const AppProvider = ({ children }) => {
     dispatch({ type: ACTIVATE_PAGE, payload: { page_id } });
   };
 
+  // ****** Hover on ScrollBar  ********
+  const hover_on_scroll_bar = () => {
+    dispatch({ type: SCOROLL_BAR_HOVER });
+  };
+
+  const exit_scroll_bar_hover = () => {
+    dispatch({ type: EXIT_SCOROLL_BAR_HOVER });
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -73,6 +85,8 @@ export const AppProvider = ({ children }) => {
         hover_on_available,
         exit_available_hover,
         activate_page,
+        hover_on_scroll_bar,
+        exit_scroll_bar_hover,
       }}
     >
       {children}

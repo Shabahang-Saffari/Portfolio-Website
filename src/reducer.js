@@ -7,6 +7,8 @@ import {
   AVAILABLE_HOVERING,
   EXIT_AVAILABLE_HOVERING,
   ACTIVATE_PAGE,
+  SCOROLL_BAR_HOVER,
+  EXIT_SCOROLL_BAR_HOVER,
 } from "./actions";
 
 const reducer = (state, action) => {
@@ -34,6 +36,12 @@ const reducer = (state, action) => {
 
     case ACTIVATE_PAGE:
       return { ...state, active_page: action.payload.page_id };
+
+    case SCOROLL_BAR_HOVER:
+      return { ...state, scroll_bar_hvr: true };
+
+    case EXIT_SCOROLL_BAR_HOVER:
+      return { ...state, scroll_bar_hvr: false };
 
     default:
       throw new Error(`Requested action type: ${action.type} not found!`);
