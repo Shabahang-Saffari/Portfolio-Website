@@ -18,7 +18,7 @@
   transition: 300ms ease-in-out all;
 }
 .nav_content {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   width: 100%;
   height: 100%;
   @include flex_center;
@@ -140,6 +140,9 @@
 // *******************************************
 
 @media screen and (min-width: 992px) {
+  .nav_content {
+    padding: 1rem 2rem;
+  }
   .available_status_wrapper {
     visibility: visible;
     flex: 1;

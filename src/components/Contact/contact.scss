@@ -14,12 +14,13 @@
 .contact_page_wrapper {
   position: relative;
   overflow: hidden;
-  scroll-margin: -6rem;
-  scroll-snap-align: end;
+  scroll-margin: 6rem;
+  // scroll-snap-align: end;
   font-family: "Roboto", sans-serif;
   color: $primary_300;
   letter-spacing: 1px;
   height: calc(100vh - 6rem);
+  padding: 2rem 0;
   transition: $transition;
   // border: 2px solid rgb(211, 226, 0) !important;
 }
@@ -165,6 +166,7 @@ textarea {
   .contact_page_wrapper {
     scroll-margin: 0;
     scroll-snap-align: end;
+    padding: 0;
     font-family: "Roboto", sans-serif;
     letter-spacing: 1px;
     height: calc(100vh - 6rem);

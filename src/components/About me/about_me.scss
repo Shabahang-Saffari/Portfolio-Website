@@ -7,9 +7,12 @@
   font-family: "Roboto", sans-serif;
   color: $primary_300;
   letter-spacing: 1px;
+  // height: calc(100vh - 6rem);
+  scroll-margin: 6rem;
+
   height: calc(100vh - 6rem);
-  scroll-margin: -6rem;
-  scroll-snap-align: end;
+  padding: 2rem 0;
+
   transition: $transition;
   // border: 2px solid rgb(211, 226, 0) !important;
 
@@ -195,7 +198,11 @@ h4 {
     font-family: "Roboto", sans-serif;
     color: $primary_300;
     letter-spacing: 1px;
+
+    scroll-snap-align: end;
     height: calc(100vh - 6rem);
+    padding: 0;
+
     scroll-margin: 0;
     scroll-snap-align: end;
     transition: $transition;
