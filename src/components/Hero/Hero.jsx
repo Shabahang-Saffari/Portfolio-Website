@@ -20,14 +20,15 @@ const Hero = () => {
       let new_active_page = Math.ceil((scroll_position + 1) / page_height);
       if (scroll_position === 0) {
         new_active_page = 0;
+        activate_page(new_active_page);
       }
       // console.log("scroll_position", scroll_position);
       // console.log("page_height", page_height);
       // console.log("new_active_page", new_active_page);
 
-      if (new_active_page !== active_page) {
-        activate_page(new_active_page);
-      }
+      // if (new_active_page !== active_page) {
+      //   activate_page(new_active_page);
+      // }
     };
     window.addEventListener("scroll", handle_scroll);
     return () => {

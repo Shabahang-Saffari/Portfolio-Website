@@ -2,8 +2,9 @@ import "./contact.scss";
 import { useGlobalContext } from "../../Context";
 import { motion } from "framer-motion";
 import { ToastContainer, toast } from "react-toastify";
+import { useInView } from "react-intersection-observer";
 
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Footer from "./Footer";
 
@@ -37,6 +38,15 @@ const Contact = () => {
   };
 
   // **************   Acitvate Page   ****************
+  const { ref, inView } = useInView({
+    threshold: 1,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      activate_page(3);
+    }
+  }, [inView]);
 
   // **************   Send Email   *******************
 
@@ -97,7 +107,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact_page_wrapper" id="contact">
+    <div ref={ref} className="contact_page_wrapper" id="contact">
       <ToastContainer
         position="top-center"
         autoClose={2000}

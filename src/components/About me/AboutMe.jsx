@@ -1,35 +1,26 @@
 import { useEffect } from "react";
 import { useGlobalContext } from "../../Context";
+import { useInView } from "react-intersection-observer";
+
 import Skill from "./Skill";
 import "./about_me.scss";
 import { motion } from "framer-motion";
 
 const AboutMe = () => {
-  // const { activate_page, active_page } = useGlobalContext();
-  // useEffect(() => {
-  //   const handle_scroll = () => {
-  //     const page_height = window.innerHeight;
-  //     const scroll_position = window.scrollY;
-  //     let new_active_page = Math.ceil((scroll_position + 1) / page_height);
-  //     if (scroll_position === 0) {
-  //       new_active_page = 0;
-  //     }
-  //     // console.log("scroll_position", scroll_position);
-  //     // console.log("page_height", page_height);
-  //     // console.log("new_active_page", new_active_page);
+  const { activate_page } = useGlobalContext();
 
-  //     if (new_active_page !== active_page) {
-  //       activate_page(new_active_page);
-  //     }
-  //   };
-  //   window.addEventListener("scroll", handle_scroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handle_scroll);
-  //   };
-  // }, [active_page]);
+  const { ref, inView } = useInView({
+    threshold: 1,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      activate_page(1);
+    }
+  }, [inView]);
 
   return (
-    <div id="about_me" className="about_me_wrapper">
+    <div ref={ref} id="about_me" className="about_me_wrapper">
       <div className="about_me_content">
         <div className="about_education_wrapper">
           <div className="about_me_section">
