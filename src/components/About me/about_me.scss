@@ -164,6 +164,9 @@ h4 {
 @media screen and (min-width: 768px) {
   .about_me_wrapper {
     scroll-margin: 0;
+    scroll-snap-align: end;
+    padding: 2rem 0;
+    border: 2px solid rgb(211, 226, 0) !important;
   }
   .about_education_wrapper {
     display: flex;
@@ -188,6 +191,14 @@ h4 {
   .education_section {
     width: 50%;
   }
+
+  .icon {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .light_mode .icon {
+    color: $primary_500;
+  }
 }
 
 // ****************************************
@@ -199,12 +210,11 @@ h4 {
     color: $primary_300;
     letter-spacing: 1px;
 
-    scroll-snap-align: end;
     height: calc(100vh - 6rem);
     padding: 0;
 
-    scroll-margin: 0;
     scroll-snap-align: end;
+    scroll-margin: 0;
     transition: $transition;
     // border: 2px solid rgb(211, 226, 0) !important;
 

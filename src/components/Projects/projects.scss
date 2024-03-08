@@ -7,8 +7,8 @@
   font-family: "Roboto", sans-serif;
   color: $primary_300;
   letter-spacing: 1px;
-  height: calc(100vh - 6rem);
   scroll-margin: 6rem;
+  height: calc(100vh - 6rem);
   padding: 2rem 0;
   // scroll-snap-align: end;
   // scroll-snap-stop: always;
@@ -52,6 +52,7 @@
   // border: 2px solid rgb(211, 226, 0) !important;
 }
 .left_side {
+  // overflow: hidden;
   height: 100%;
   width: 100%;
   display: flex;
@@ -135,10 +136,15 @@
 // ************ Tablet ***************
 // ************************************
 @media screen and (min-width: 700px) {
-  .project_page_content {
-    gap: 0;
+  .project_page_wrapper {
     margin: 0 auto;
     scroll-margin: 0;
+    scroll-snap-align: end;
+
+    border: 2px solid rgb(211, 226, 0) !important;
+  }
+  .project_page_content {
+    gap: 0;
     // border: 2px solid rgb(211, 226, 0) !important;
     h4 {
       font-size: $title_font;
@@ -149,7 +155,7 @@
   .project_wrapper {
     @include flex_center;
     flex-direction: column;
-    width: 100%;
+    width: 85%;
     height: 85%;
     border-radius: $border_radius;
     background: $primary_650;

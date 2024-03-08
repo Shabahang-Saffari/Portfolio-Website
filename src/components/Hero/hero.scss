@@ -65,6 +65,7 @@
     scroll-margin: 0;
     margin-top: 6rem;
     height: calc(100vh - 6rem);
+    scroll-snap-align: end;
 
     // border: 2px solid rgb(10, 124, 253) !important;
   }

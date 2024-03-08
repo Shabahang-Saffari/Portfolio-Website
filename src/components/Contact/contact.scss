@@ -34,7 +34,7 @@
   width: calc(100vw - 4rem);
   margin: 0 auto;
   margin-bottom: 1rem;
-  height: calc(100% - 1rem);
+  height: calc(100% - 2rem);
   // background: $primary_200;
   // border: 2px solid rgb(211, 226, 0) !important;
   h4 {
@@ -158,11 +158,23 @@ textarea {
   }
 }
 
+// ****************************************
+// ************    Tablet   **************
+// ****************************************
+
+@media screen and (min-width: 768px) {
+  .contact_page_wrapper {
+    scroll-margin: 0;
+    scroll-snap-align: end;
+    padding: 2rem 0;
+  }
+}
+
 // ************************************
 // ************ Desktop ***************
 // ************************************
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   .contact_page_wrapper {
     scroll-margin: 0;
     scroll-snap-align: end;
