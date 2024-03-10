@@ -16,3 +16,8 @@ body {
   @include theme_mode(false);
   // transition-delay: 300ms;
 }
+
+main {
+  @include flex_center;
+  flex-direction: column;
+}
