@@ -74,6 +74,7 @@ h4 {
     margin-top: 0.1rem;
     margin-bottom: 0.5rem;
     margin-left: 0.8rem;
+    color: $primary_400;
   }
 }
 
@@ -114,12 +115,12 @@ h4 {
 .items_wrapper {
   @include flex_center;
   justify-content: left;
-  gap: 8%;
+  gap: 4%;
   padding: 0.25rem 0 0.25rem 0;
   color: $primary_100;
   // font-weight: $font_weight4;
   height: 3rem;
-  border-bottom: 1px solid $primary_300;
+  border-bottom: 1px solid $primary_400;
   // border: 2px solid rgb(211, 226, 0) !important;
   @media screen and (pointer: fine) {
     .item:hover {
@@ -140,7 +141,7 @@ h4 {
   display: none;
 }
 .icon {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .item_name {
@@ -150,13 +151,15 @@ h4 {
 // ****************************************
 // ************    Tablet   **************
 // ****************************************
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .about_me_wrapper {
     scroll-margin: 0;
     scroll-snap-align: end;
     padding: 2rem 0;
+    width: 80%;
     // border: 2px solid rgb(211, 226, 0) !important;
   }
+
   .about_education_wrapper {
     display: flex;
     width: 100%;
@@ -172,21 +175,31 @@ h4 {
     display: block;
     width: 50%;
     margin-top: 0.5rem;
-    margin-bottom: 5rem;
+    // margin-bottom: 5rem;
     line-height: 1.3rem;
+    color: $primary_200;
+    font-size: $small_font;
+    font-weight: $font_weight4;
     // border-radius: $border_radius;
   }
 
   .education_section {
     width: 50%;
   }
+  .skill_section_wrapper {
+    h4 {
+      margin-bottom: 0.5rem;
+    }
+  }
   .items_wrapper {
+    gap: 7%;
     border-bottom: none;
+    border-top: 1px solid $primary_400;
   }
 
   .icon {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .light_mode .icon {
     color: $primary_500;
@@ -196,7 +209,7 @@ h4 {
 // ****************************************
 // ************    Desktop   **************
 // ****************************************
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .about_me_wrapper {
     font-family: "Roboto", sans-serif;
     color: $primary_300;
@@ -250,7 +263,7 @@ h4 {
     margin-bottom: 5rem;
     line-height: 1.3rem;
     p {
-      font-weight: $font_weight5;
+      font-weight: $font_weight4;
     }
     // border: 1px solid yellow;
   }
@@ -281,6 +294,7 @@ h4 {
     width: 65%;
     text-align: center;
     h4 {
+      margin-bottom: 0;
       text-align: center;
     }
     // border: 2px solid rgb(211, 226, 0) !important;
@@ -289,8 +303,9 @@ h4 {
     width: 100%;
     height: 100%;
     // border-radius: $border_radius;
-    // border: 2px solid rgb(211, 226, 0) !important;
     // background: $primary_600;
+
+    // border: 2px solid rgb(211, 226, 0) !important;
   }
 
   .skills_wrapper {
@@ -299,6 +314,7 @@ h4 {
   }
 
   .items_wrapper {
+    gap: 9%;
     border-bottom: none;
     height: 3.5rem;
     .item:hover {
@@ -320,13 +336,13 @@ h4 {
     display: block;
     // background: $primary_500;
     text-align: left;
-    color: $primary_300;
+    color: $primary_400;
     letter-spacing: 0.35rem;
     // margin-bottom: 0.5rem;
     padding: 0.2rem 0 0.2rem 0;
-    font-weight: $font_weight5;
+    font-weight: $font_weight6;
     font-size: $small_font;
-    border-bottom: 1px solid $primary_300;
+    border-bottom: 1px solid $primary_400;
   }
   // .light_mode .category {
   //   color: $primary_300;

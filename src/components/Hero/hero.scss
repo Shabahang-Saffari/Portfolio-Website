@@ -3,7 +3,7 @@
 @import "../../Sass/functions";
 
 .hero_wrapper {
-  overflow: hidden;
+  // overflow: hidden;
   // scroll-snap-align: end;
   // scroll-snap-stop: always;
   scroll-margin: 6rem;
@@ -83,13 +83,22 @@
     }
   }
 
+  .light_mode .my_sentence {
+    color: $primary_400;
+    small {
+      color: $primary_500;
+    }
+  }
+}
+@media screen and (min-width: 850px) {
   .my_sentence {
     position: absolute;
     top: 0;
     right: 0;
     @include flex_center;
     width: 28rem;
-    height: 11rem;
+    height: 8rem;
+    font-size: 0.9rem;
     text-transform: none;
     color: $primary_300;
     transition: $transition;
@@ -101,30 +110,22 @@
     small {
       display: block;
       margin-top: 0.5rem;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
     .curlies {
       font-family: "Fira Sans", sans-serif;
       font-weight: 100;
-      font-size: 11rem;
+      font-size: 7rem;
       line-height: 0;
     }
     // border: 2px solid rgb(211, 226, 0) !important;
   }
-
-  .light_mode .my_sentence {
-    color: $primary_400;
-    small {
-      color: $primary_500;
-    }
-  }
 }
-
 // ****************************************
 // ************ Hero Desktop **************
 // ****************************************
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .hero_wrapper {
     scroll-snap-align: end;
     scroll-margin: 0;
@@ -142,16 +143,16 @@
       display: block;
       // line-height: 0.6;
       // border: 2px solid rgb(10, 124, 253) !important;
-      font-size: clamp(20px, 15vw, 19rem);
+      font-size: clamp(20px, 14.2vw, 19rem);
     }
     .hero_title_p2 {
-      font-size: clamp(20px, 15vw, 19rem);
+      font-size: clamp(20px, 14.2vw, 19rem);
     }
   }
 
   .my_sentence {
     position: absolute;
-    top: 0.5rem;
+    top: -0.5rem;
     right: 0;
     @include flex_center;
     width: 30rem;
@@ -175,7 +176,7 @@
     .curlies {
       font-family: "Fira Sans", sans-serif;
       font-weight: 100;
-      font-size: 11rem;
+      font-size: 9rem;
       line-height: 0;
     }
     // border: 2px solid rgb(211, 226, 0) !important;
