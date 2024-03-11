@@ -181,7 +181,12 @@ textarea {
     padding: 0;
     font-family: "Roboto", sans-serif;
     letter-spacing: 1px;
+
     height: calc(100vh - 6rem);
+
+    width: 100vw;
+    max-width: 1920px;
+
     // border: 2px solid rgb(211, 226, 0) !important;
   }
 
@@ -195,6 +200,7 @@ textarea {
     margin: 0 auto;
     margin-bottom: 1rem;
     height: calc(100% - 1rem);
+    width: 80%;
     // background: $primary_200;
     // border: 2px solid rgb(211, 226, 0) !important;
     h4 {
@@ -212,7 +218,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 70%;
+    width: 100%;
     margin-top: 0;
     border-radius: $border_radius;
     // border: 2px solid rgb(211, 226, 0) !important;

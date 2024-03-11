@@ -136,10 +136,10 @@
 .light_mode a {
   color: $primary_500;
 }
-.prj_pics_wrapper {
-  display: none;
-  // border: 2px solid rgb(211, 226, 0) !important;
-}
+// .prj_pics_wrapper {
+//   display: none;
+//   border: 2px solid rgb(211, 226, 0) !important;
+// }
 
 // ************************************
 // ************ Tablet ***************
@@ -317,6 +317,7 @@
   }
   .project_page_content {
     width: 80%;
+    // border: 2px solid rgb(211, 226, 0) !important;
   }
 
   .project_wrapper {
@@ -331,29 +332,30 @@
     // border: 2px solid rgb(211, 226, 0) !important;
   }
   .project_title {
+    margin: 1rem 1rem 0 0;
     font-size: $xhuge_font;
     color: $primary_200;
   }
   .prj_description {
-    margin: 1rem 5rem 1rem 1rem;
+    margin: 1rem 5rem 1rem 0;
   }
   .techs_stack {
     display: flex;
-    margin: 2rem 5rem 2rem 1rem;
+    margin: 2rem 5rem 2rem 0;
   }
 
   .right_side {
     width: 50%;
-    position: relative;
+    // position: relative;
     // border: 2px solid rgb(211, 226, 0) !important;
   }
   .prj_pics_wrapper {
     @include flex_center;
     position: relative;
-    height: 50%;
+    height: 55%;
     max-height: 390px;
     width: 95%;
-    max-width: 750px;
+    max-width: 720px;
 
     // border: 2px solid rgb(211, 226, 0) !important;
   }
@@ -432,7 +434,7 @@
   .right_side {
     .my_links {
       position: absolute;
-      bottom: 4rem;
+      bottom: -4rem;
       right: 50%;
       transform: translateX(50%);
 

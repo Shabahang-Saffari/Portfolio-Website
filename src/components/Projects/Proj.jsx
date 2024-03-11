@@ -56,37 +56,37 @@ export const Proj = () => {
               className="cellphone_pic"
               style={{ background: `url(${pic3}) center/cover` }}
             ></div>
+            <ul className="my_links">
+              <li>
+                <motion.a
+                  href={live_url}
+                  onMouseOver={links_cursor_hover_handler}
+                  onMouseLeave={links_cursor_exit_hover_handler}
+                  transition={{ type: "spring", stiffness: 200 }}
+                  whileHover={{
+                    scale: 1.2,
+                    // textShadow: "0px 0px 8px rgb(255,255,255)",
+                  }}
+                >
+                  Try it live
+                </motion.a>
+              </li>
+              <li>
+                <motion.a
+                  href={github_url}
+                  onMouseOver={links_cursor_hover_handler}
+                  onMouseLeave={links_cursor_exit_hover_handler}
+                  transition={{ type: "spring", stiffness: 200 }}
+                  whileHover={{
+                    scale: 1.2,
+                    // textShadow: "0px 0px 8px rgb(255,255,255)",
+                  }}
+                >
+                  GitHub
+                </motion.a>
+              </li>
+            </ul>
           </div>
-          <ul className="my_links">
-            <li>
-              <motion.a
-                href={live_url}
-                onMouseOver={links_cursor_hover_handler}
-                onMouseLeave={links_cursor_exit_hover_handler}
-                transition={{ type: "spring", stiffness: 200 }}
-                whileHover={{
-                  scale: 1.2,
-                  // textShadow: "0px 0px 8px rgb(255,255,255)",
-                }}
-              >
-                Try it live
-              </motion.a>
-            </li>
-            <li>
-              <motion.a
-                href={github_url}
-                onMouseOver={links_cursor_hover_handler}
-                onMouseLeave={links_cursor_exit_hover_handler}
-                transition={{ type: "spring", stiffness: 200 }}
-                whileHover={{
-                  scale: 1.2,
-                  // textShadow: "0px 0px 8px rgb(255,255,255)",
-                }}
-              >
-                GitHub
-              </motion.a>
-            </li>
-          </ul>
         </div>
       </div>
     );
