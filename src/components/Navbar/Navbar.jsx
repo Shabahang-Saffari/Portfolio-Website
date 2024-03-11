@@ -34,10 +34,18 @@ const Navbar = () => {
 
   const links_cursor_hover_handler = () => {
     hover_btns();
+    const theme_mode_btn = document.querySelector(".theme_mode_btn");
+    if (theme_mode_btn) {
+      theme_mode_btn.innerText = dark_mode ? "Day" : "Night";
+    }
   };
 
   const links_cursor_exit_hover_handler = () => {
     hover_btns_exit();
+    const theme_mode_btn = document.querySelector(".theme_mode_btn");
+    if (theme_mode_btn) {
+      theme_mode_btn.innerText = dark_mode ? "Night" : "Day";
+    }
   };
 
   // **************   NavLinks menu btn   *************
@@ -56,7 +64,7 @@ const Navbar = () => {
             onMouseLeave={cursor_exit_hover_handler}
             whileHover={{
               y: -6,
-              textShadow: "0px 0px 8px rgb(255,255,255)",
+              // textShadow: "0px 0px 8px rgb(255,255,255)",
             }}
           >
             Available to join your team
@@ -76,7 +84,8 @@ const Navbar = () => {
             whileHover={{
               scale: 1.1,
               y: -6,
-              textShadow: "0px 0px 8px rgb(255,255,255)",
+              // textShadow: "0px 0px 8px rgb(255,255,255)",
+              content: dark_mode ? "Day" : "Night",
             }}
           >
             {dark_mode ? "Night" : "Day"}

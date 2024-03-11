@@ -30,7 +30,7 @@ const Navlinks = () => {
             whileHover={{
               scale: 1.1,
               y: -6,
-              textShadow: "0px 0px 8px rgb(255,255,255)",
+              // textShadow: "0px 0px 8px rgb(255,255,255)",
             }}
           >
             <a
@@ -53,7 +53,7 @@ const Navlinks = () => {
             whileHover={{
               scale: 1.1,
               y: -6,
-              textShadow: "0px 0px 8px rgb(255,255,255)",
+              // textShadow: "0px 0px 8px rgb(255,255,255)",
             }}
           >
             <a
