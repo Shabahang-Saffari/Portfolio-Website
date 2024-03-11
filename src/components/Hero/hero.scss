@@ -154,7 +154,7 @@
     top: 0.5rem;
     right: 0;
     @include flex_center;
-    width: 32rem;
+    width: 30rem;
     height: 11rem;
     text-transform: none;
     color: $primary_300;
@@ -163,13 +163,13 @@
     // text-align: justify;
     p {
       display: inline;
-      font-size: 1.3rem;
+      font-size: 1.15rem;
       // border: 2px solid rgb(211, 226, 0) !important;
     }
     small {
       display: block;
       margin-top: 0.5rem;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       letter-spacing: 1px;
     }
     .curlies {
