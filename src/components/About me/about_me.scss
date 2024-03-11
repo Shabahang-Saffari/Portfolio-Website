@@ -151,6 +151,16 @@ h4 {
 // ****************************************
 // ************    Tablet   **************
 // ****************************************
+@media screen and (min-width: 700px) {
+  .about_me_wrapper {
+    scroll-margin: 0;
+    scroll-snap-align: end;
+    padding: 2rem 0;
+    width: 80%;
+    // border: 2px solid rgb(211, 226, 0) !important;
+  }
+}
+// ****************************************
 @media screen and (min-width: 900px) {
   .about_me_wrapper {
     scroll-margin: 0;
