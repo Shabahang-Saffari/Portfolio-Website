@@ -66,7 +66,7 @@ export const Proj = () => {
                 transition={{ type: "spring", stiffness: 200 }}
                 whileHover={{
                   scale: 1.2,
-                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                  // textShadow: "0px 0px 8px rgb(255,255,255)",
                 }}
               >
                 Try it live
@@ -80,7 +80,7 @@ export const Proj = () => {
                 transition={{ type: "spring", stiffness: 200 }}
                 whileHover={{
                   scale: 1.2,
-                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                  // textShadow: "0px 0px 8px rgb(255,255,255)",
                 }}
               >
                 GitHub
