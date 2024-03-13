@@ -42,7 +42,7 @@ const AboutMe = () => {
             <ul>
               <li>Bachelor of Computer Software Engineering</li>
               <p>May 2012, Islamic Azad University, Tehran, Iran</p>
-              <li>Python Programing (Grade A)</li>
+              <li>Python Programming (Grade A)</li>
               <p>Fall 2022, BCIT, BC, Canada </p>
               <li>NodeJS</li>
               <p>Udemy Certificate, 2023</p>

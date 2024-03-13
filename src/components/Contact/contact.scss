@@ -19,7 +19,10 @@
   font-family: "Roboto", sans-serif;
   color: $primary_300;
   letter-spacing: 1px;
+
+  height: calc(100vh - 6rem); //Just in case the "svh" is not supported!
   height: calc(100svh - 6rem);
+
   padding: 2rem 0;
   transition: $transition;
   // border: 2px solid rgb(211, 226, 0) !important;
