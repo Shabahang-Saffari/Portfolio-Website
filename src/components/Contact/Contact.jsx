@@ -11,7 +11,7 @@ import Footer from "./Footer";
 const button_variants = {
   hover: {
     y: [5, 0, 5],
-    textShadow: "0px 0px 10px rgb(255,255,255)",
+    // textShadow: "0px 0px 10px rgb(255,255,255)",
     transition: {
       y: { repeat: Infinity, duration: 1.5 },
     },
