@@ -11,6 +11,13 @@ export const Proj = () => {
   const links_cursor_exit_hover_handler = () => {
     hover_btns_exit();
   };
+  // ************ handle pics click *************
+
+  const handle_pics_click = (prj_url) => {
+    window.location.href = prj_url;
+  };
+
+  // ********************************************
 
   return my_projects.map((project) => {
     const {
@@ -47,14 +54,23 @@ export const Proj = () => {
             <div
               className="desktop_pic"
               style={{ background: `url(${pic1}) center/cover` }}
+              onClick={() => {
+                handle_pics_click(live_url);
+              }}
             ></div>
             <div
               className="tablet_pic"
               style={{ background: `url(${pic2}) center/cover` }}
+              onClick={() => {
+                handle_pics_click(live_url);
+              }}
             ></div>
             <div
               className="cellphone_pic"
               style={{ background: `url(${pic3}) center/cover` }}
+              onClick={() => {
+                handle_pics_click(live_url);
+              }}
             ></div>
             <ul className="my_links">
               <li>
@@ -92,4 +108,3 @@ export const Proj = () => {
     );
   });
 };
-// export default Project;
