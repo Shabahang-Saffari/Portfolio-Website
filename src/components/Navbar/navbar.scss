@@ -41,13 +41,6 @@
 .available_status_wrapper {
   visibility: hidden;
   flex: 1;
-  a {
-    @include flex_center;
-    justify-content: left;
-    height: 2.5rem;
-    width: 16rem;
-    // border: 2px solid rgb(166, 255, 0) !important;
-  }
 
   // border: 2px solid rgb(166, 255, 0) !important;
 }
@@ -169,6 +162,13 @@
   .available_status_wrapper {
     visibility: visible;
     flex: 1;
+    a {
+      @include flex_center;
+      justify-content: left;
+      height: 2.5rem;
+      width: 16rem;
+      // border: 2px solid rgb(166, 255, 0) !important;
+    }
   }
   .available_status {
     display: inline-block;

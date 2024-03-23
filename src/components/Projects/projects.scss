@@ -138,8 +138,11 @@
     }
   }
 }
-.light_mode a {
-  color: $primary_500;
+
+.light_mode .right_side {
+  a {
+    color: inherit;
+  }
 }
 // .prj_pics_wrapper {
 //   display: none;
