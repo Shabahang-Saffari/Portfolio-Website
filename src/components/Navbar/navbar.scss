@@ -30,26 +30,46 @@
   font-size: $small_font;
   font-weight: $font_weight5;
   text-transform: uppercase;
+
+  // border: 2px solid rgb(166, 255, 0) !important;
 }
 .light_mode .nav_content {
-  font-weight: $font_weight7;
+  font-weight: $font_weight5;
   transition: 50ms ease-in-out;
 }
 
 .available_status_wrapper {
   visibility: hidden;
   flex: 1;
+  a {
+    @include flex_center;
+    justify-content: left;
+    height: 2.5rem;
+    width: 16rem;
+    // border: 2px solid rgb(166, 255, 0) !important;
+  }
+
+  // border: 2px solid rgb(166, 255, 0) !important;
 }
 
 .theme_mode_wrapper {
   flex: 1;
   @include flex_center;
   font-size: $base_font;
+
+  // border: 2px solid rgb(166, 255, 0) !important;
 }
 .light_mode .theme_mode_wrapper {
   :hover {
     color: $tertiary-600;
   }
+}
+
+.theme_mode_btn {
+  @include flex_center;
+  width: 4rem;
+  height: 2.5rem;
+  // border: 2px solid rgb(166, 255, 0) !important;
 }
 
 .slider_menu_wrapper {
@@ -153,9 +173,9 @@
   .available_status {
     display: inline-block;
     color: inherit;
-    // &:hover {
-    //   font-weight: $font_weight6;
-    // }
+    &:hover {
+      font-weight: $font_weight6;
+    }
   }
 
   .light_mode .available_status {
