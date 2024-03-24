@@ -31,7 +31,7 @@ React Vite, SASS, CSS, HTML5.
 
 In order to clone this repository follow the below instruction:
 
-- **Copy the repository URL:** copy the following repository URL
+- **Copy the following repository URL:**
 
   https://github.com/Shabahang-Saffari/Portfolio-Website.git
 
@@ -39,7 +39,7 @@ In order to clone this repository follow the below instruction:
 
 - **Navigate to the Directory:** Use the cd command to navigate to the directory where you want to clone the repository.
 
-- **Clone the Repository:** Once you're in the desired directory, use the git clone command followed by the URL you copied earlier:
+- **Clone the Repository:** Once you're in the desired directory, use the git clone command followed by the URL you copied earlier (or simply copy and paste the entire following command):
 
   ```bash
 
