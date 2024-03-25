@@ -27,7 +27,7 @@ React Vite, SASS, CSS, HTML5.
 
 <br>
 
-### 3. How to clone this repository?
+### 4. How to clone this repository?
 
 In order to clone this repository follow the below instruction:
 
@@ -47,7 +47,7 @@ In order to clone this repository follow the below instruction:
 
   ```
 
-### 4. How to run the application?
+### 5. How to run the application?
 
 - **Install Dependencies:** Navigate into the cloned directory (Portfolio-Website) using your terminal or command prompt, and then run:
 
