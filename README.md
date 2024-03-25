@@ -23,7 +23,7 @@ In order to visit the website online, click on the following link:
 
 ### 3. Technology Used
 
-:small_blue_diamond:React Vite :small_blue_diamond:SASS :small_blue_diamond:CSS :small_blue_diamond:HTML5
+:small_blue_diamond:React Vite :small_blue_diamond:SASS :small_blue_diamond:CSS :small_blue_diamond:HTML5 :small_blue_diamond:GIT
 
 <br>
 
