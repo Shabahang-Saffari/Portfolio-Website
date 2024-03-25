@@ -39,13 +39,15 @@ In order to clone this repository follow the below instruction:
 
 - **Navigate to the Directory:** Use the cd command to navigate to the directory where you want to clone the repository.
 
-- **Clone the Repository:** Once you're in the desired directory, use the git clone command followed by the URL you copied earlier (or simply copy and paste the entire following command):
+- **Clone the Repository:** Once you're in the desired directory, use the git clone command followed by the URL you copied earlier **or simply copy and paste the entire following command:**
 
   ```bash
 
   git clone https://github.com/Shabahang-Saffari/Portfolio-Website.git
 
   ```
+
+<br>
 
 ### 5. How to run the application?
 
