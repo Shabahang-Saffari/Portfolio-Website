@@ -8,15 +8,15 @@ import { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Footer from "./Footer";
 
-const button_variants = {
-  hover: {
-    y: [5, 0, 5],
-    // textShadow: "0px 0px 10px rgb(255,255,255)",
-    transition: {
-      y: { repeat: Infinity, duration: 1.5 },
-    },
-  },
-};
+// const button_variants = {
+//   hover: {
+//     y: [5, 0, 5],
+//     // textShadow: "0px 0px 10px rgb(255,255,255)",
+//     transition: {
+//       y: { repeat: Infinity, duration: 1.5 },
+//     },
+//   },
+// };
 
 const Contact = () => {
   const my_form_ref = useRef();
@@ -149,8 +149,11 @@ const Contact = () => {
               type="submit"
               onMouseOver={cursor_hover_handler}
               onMouseLeave={cursor_exit_hover_handler}
-              variants={button_variants}
-              whileHover="hover"
+              // variants={button_variants}
+              // whileHover="hover"
+              whileHover={{
+                y: -6,
+              }}
             >
               Send
             </motion.button>
