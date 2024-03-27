@@ -9,7 +9,7 @@
 
 ### 1. What is this application?
 
-This is a React.js application where I showcase my projects, skills, and experiences. Feel free to send me a text message throught the Contact page on the website.
+This is a React.js application where I showcase my projects, skills, and experiences. Feel free to send me a message through the Contact page on the website.
 
 <br>
 
