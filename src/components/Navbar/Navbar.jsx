@@ -72,7 +72,6 @@ const Navbar = () => {
         </div>
 
         <div className="theme_mode_wrapper">
-          <div className="white_effect"></div>
           <motion.div
             className="theme_mode_btn"
             onClick={toggle_theme_handler}
