@@ -223,9 +223,10 @@ textarea {
   form {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
-    margin-top: 0;
+    height: 75%;
+    margin-top: 0%;
     border-radius: $border_radius;
     // border: 2px solid rgb(211, 226, 0) !important;
 
