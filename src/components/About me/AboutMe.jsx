@@ -42,6 +42,8 @@ const AboutMe = () => {
             <ul>
               <li>Bachelor of Computer Software Engineering</li>
               <p>May 2012, Islamic Azad University, Tehran, Iran</p>
+              <li>Master of Music Composition</li>
+              <p>Jan 2019, University of Victoria, Victoria, BC, Canada</p>
               <li>Python Programming (Grade A)</li>
               <p>Fall 2022, BCIT, BC, Canada </p>
               <li>NodeJS</li>
