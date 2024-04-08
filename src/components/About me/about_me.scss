@@ -172,6 +172,8 @@ h4 {
     // -webkit-scroll-snap-align: end;
 
     padding: 2rem 0;
+    margin-top: 0;
+
     height: calc(100vh - 6rem); //Just in case the "svh" is not supported!
     height: calc(100svh - 6rem);
     width: 85%;
