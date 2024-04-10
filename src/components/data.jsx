@@ -158,7 +158,7 @@ export const my_projects = [
   {
     id: nanoid(),
     name: "BugTracker",
-    live_url: "https://bugtracker24.azurewebsites.net/",
+    live_url: "https://bugtracker-pro.azurewebsites.net/",
     github_url: "https://github.com/Shabahang-Saffari/BugTracker-Deployed",
     description:
       "This application is a comprehensive full-stack solution, incorporating robust authentication and authorization features. Users can effortlessly sign up, and the admin defines roles and access levels. The application provides a range of functionalities, including project and ticket creation/editing, commenting, and more. Users benefit from a powerful search and filter system, ensuring efficient management and tracking of bugs and issues.",
