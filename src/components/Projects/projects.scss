@@ -104,8 +104,9 @@
     font-size: 1.5rem;
   }
   p {
-    font-size: $xsmall_font;
+    display: none;
   }
+  // border: 2px solid rgb(211, 226, 0) !important;
 }
 
 .right_side {
@@ -211,6 +212,11 @@
     justify-content: space-between;
     font-weight: $font_weight5;
     margin: 2rem 0;
+
+    p {
+      display: block;
+      font-size: $xsmall_font;
+    }
   }
 
   .right_side {
