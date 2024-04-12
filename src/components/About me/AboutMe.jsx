@@ -49,7 +49,7 @@ const AboutMe = () => {
               <li>React</li>
               <p>Udemy Certificate, 2024</p>
               <li>Master of Music</li>
-              <p>Jan 2019, University of Victoria, Victoria, BC, Canada</p>
+              <p>January 2019, University of Victoria, Victoria, BC, Canada</p>
             </ul>
           </div>
         </div>
