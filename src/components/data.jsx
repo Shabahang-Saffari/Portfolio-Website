@@ -8,6 +8,7 @@ import { FaLinkedin, FaTwitter } from "react-icons/fa";
 
 import {
   SiSass,
+  SiTailwindcss,
   SiMicrosoftsqlserver,
   SiMongodb,
   SiExpress,
@@ -88,6 +89,7 @@ export const skills = [
       { id: nanoid(), name: "HTML", icon: <FaHtml5 /> },
       { id: nanoid(), name: "CSS", icon: <FaCss3Alt /> },
       { id: nanoid(), name: "SASS", icon: <SiSass /> },
+      { id: nanoid(), name: "Tailwind", icon: <SiTailwindcss /> },
       { id: nanoid(), name: "Javascript", icon: <RiJavascriptFill /> },
       { id: nanoid(), name: "React", icon: <FaReact /> },
       { id: nanoid(), name: "Framer Motion", icon: <TbBrandFramerMotion /> },
