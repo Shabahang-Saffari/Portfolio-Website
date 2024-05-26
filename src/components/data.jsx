@@ -101,7 +101,7 @@ export const skills = [
     items: [
       { id: nanoid(), name: "Node.js", icon: <FaNodeJs /> },
       { id: nanoid(), name: "Express.js", icon: <SiExpress /> },
-      { id: nanoid(), name: "Rest API", icon: <GrDatabase /> },
+      { id: nanoid(), name: "REST API", icon: <GrDatabase /> },
       { id: nanoid(), name: "Postman", icon: <SiPostman /> },
     ],
   },
