@@ -31,11 +31,14 @@ const AboutMe = () => {
               code. I believe in the power of technology to create elegant
               solutions, and I am always eager to explore new challenges in the
               world of coding.
-              {/* I am a
-              highly skilled and dedicated developer, holding a bachelor's
-              degree in the field. I am enthusiastic about programming and find
-              joy in problem-solving. */}
             </p>
+          </div>
+          <div className="work_experience">
+            <h4>Work Experience</h4>
+            <ul>
+              <li>Full Stack Developer, KeelWorks</li>
+              <p>Washington, United States, March 2024 - Current</p>
+            </ul>
           </div>
           <div className="education_section">
             <h4>Education</h4>
