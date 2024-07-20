@@ -187,15 +187,24 @@ export const Proj = () => {
         <div className="slider_pagination">
           {my_projects.map((project, project_index) => {
             return (
-              <li
-                id={project_index}
-                className={
-                  currentProject === project_index ? "active_page" : ""
-                }
-                onClick={() => {
-                  setCurrentProject(project_index);
+              <motion.li
+                key={project_index}
+                initial={{ opacity: 0, scale: 0.3 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                whileHover={{
+                  scale: 2,
                 }}
-              ></li>
+              >
+                <a
+                  className={
+                    currentProject === project_index ? "active_page" : ""
+                  }
+                  onClick={() => {
+                    setCurrentProject(project_index);
+                  }}
+                ></a>
+              </motion.li>
             );
           })}
         </div>

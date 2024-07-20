@@ -128,7 +128,7 @@
 
   // border: 2px solid rgb(211, 226, 0) !important;
   .my_links {
-    margin-top: 2rem;
+    margin-top: 0rem;
     display: flex;
     gap: 2rem;
 
@@ -172,7 +172,7 @@
   font-size: 5rem;
 
   :hover {
-    color: $secondary_300;
+    color: $secondary_200;
     transition: $transition;
     // transform: rotate(360deg);
   }
@@ -198,12 +198,14 @@
 
 .slider_pagination {
   position: absolute;
-  right: 50%;
+  right: 43%;
   @include flex_center;
-  gap: 20px;
+  gap: 30px;
   // border: 2px solid rgb(211, 226, 0) !important;
-
   li {
+    list-style-type: none;
+  }
+  a {
     display: block;
     background-color: $primary_500;
     height: 15px;
@@ -229,13 +231,7 @@
     transform: rotate(315deg);
   }
 }
-// .pagination_dots {
-//   list-style-type: none;
-//   height: 15px;
-//   width: 15px;
-//   background-color: white;
-//   border-radius: 25px;
-// }
+
 // ************************************
 // ************ Tablet ***************
 // ************************************
@@ -329,16 +325,18 @@
   .prev_slide_btn {
     bottom: auto;
     left: auto;
-
     top: 40%;
     left: 8%;
   }
   .next_slide_btn {
     bottom: auto;
     left: auto;
-
     top: 40%;
     right: 8%;
+  }
+  .slider_pagination {
+    right: 50%;
+    top: 42%;
   }
 
   @media screen and (min-height: 800px) {
@@ -600,5 +598,9 @@
         }
       }
     }
+  }
+  .slider_pagination {
+    right: 50%;
+    top: auto;
   }
 }
