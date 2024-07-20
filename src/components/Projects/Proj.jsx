@@ -160,12 +160,12 @@ export const Proj = () => {
           type="button"
           className="slider_btns prev_slide_btn"
           onClick={() => {
-            next_slide();
+            prev_slide();
           }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ type: "spring", stiffness: 250 }}
           whileHover={{
-            scale: 3,
+            scale: 2.25,
           }}
         >
           <HiOutlineChevronLeft />
@@ -174,12 +174,12 @@ export const Proj = () => {
           type="button"
           className="slider_btns next_slide_btn"
           onClick={() => {
-            prev_slide();
+            next_slide();
           }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ type: "spring", stiffness: 250 }}
           whileHover={{
-            scale: 3,
+            scale: 2.25,
           }}
         >
           <HiOutlineChevronRight />
