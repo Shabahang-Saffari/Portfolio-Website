@@ -26,27 +26,51 @@ export const Proj = () => {
 
   // ************ Slider *************
   const [ProjData, setProjData] = useState();
+  const [currentProject, setCurrentProject] = useState(0);
 
-  const prev_slide = () => {};
-  const next_slide = () => {};
+  const prev_slide = () => {
+    if (currentProject > 0) {
+      setCurrentProject(currentProject - 1);
+    } else {
+      setCurrentProject(my_projects.length - 1);
+    }
+  };
+  const next_slide = () => {
+    if (currentProject === my_projects.length - 1) {
+      setCurrentProject(0);
+    } else {
+      setCurrentProject(currentProject + 1);
+    }
+  };
 
   return (
     <>
-      {my_projects.map((project) => {
-        const {
-          id,
-          name,
-          description,
-          live_url,
-          github_url,
-          techs,
-          pic1,
-          pic2,
-          pic3,
-        } = project;
-        return (
-          <div className="project_wrapper" key={id}>
-            <div className="slider_wrapper">
+      <div className="project_wrapper">
+        {my_projects.map((project, project_index) => {
+          const {
+            id,
+            name,
+            description,
+            live_url,
+            github_url,
+            techs,
+            pic1,
+            pic2,
+            pic3,
+          } = project;
+          return (
+            <div
+              className="slider_wrapper"
+              style={{
+                transform: `translateX(${
+                  (project_index - currentProject) * 120
+                }%)`,
+                opacity: project_index === currentProject ? 1 : 0,
+                visibility:
+                  project_index === currentProject ? "visible" : "hidden",
+              }}
+              key={id}
+            >
               <div className="left_side">
                 <div className="project_title">{name}</div>
                 <p className="prj_description">{description}</p>
@@ -118,9 +142,9 @@ export const Proj = () => {
                 </div>
               </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
       <div className="slider_btns_wrapper">
         <button
           type="button"

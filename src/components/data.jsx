@@ -177,23 +177,23 @@ export const my_projects = [
     pic2: BugTracker_tablet,
     pic3: BugTracker_cellphone,
   },
-  // {
-  //   id: nanoid(),
-  //   name: "KeelWorks",
-  //   live_url: "https://www.keelworks.org/",
-  //   github_url: "https://github.com/keelworks/keelworks-website.git",
-  //   description:
-  //     "This website has been replaced with the old version to improve the user experience and promot about organization mission. The new organization platform .",
-  //   techs: [
-  //     { id: nanoid(), name: "React.js", icon: <FaReact /> },
-  //     { id: nanoid(), name: "Tailwind CSS", icon: <SiTailwindcss /> },
-  //     { id: nanoid(), name: "Git", icon: <FaGitAlt /> },
-  //     { id: nanoid(), name: "GitHub", icon: <GrGithub /> },
-  //   ],
-  //   pic1: BugTracker_desktop,
-  //   pic2: BugTracker_tablet,
-  //   pic3: BugTracker_cellphone,
-  // },
+  {
+    id: nanoid(),
+    name: "KeelWorks",
+    live_url: "https://www.keelworks.org/",
+    github_url: "https://github.com/keelworks/keelworks-website.git",
+    description:
+      "This website has been replaced with the old version to improve the user experience and promot about organization mission. The new organization platform .",
+    techs: [
+      { id: nanoid(), name: "React.js", icon: <FaReact /> },
+      { id: nanoid(), name: "Tailwind CSS", icon: <SiTailwindcss /> },
+      { id: nanoid(), name: "Git", icon: <FaGitAlt /> },
+      { id: nanoid(), name: "GitHub", icon: <GrGithub /> },
+    ],
+    pic1: BugTracker_desktop,
+    pic2: BugTracker_tablet,
+    pic3: BugTracker_cellphone,
+  },
 ];
 // ************ Portfolio Tech Used ***********
 export const my_website = {
