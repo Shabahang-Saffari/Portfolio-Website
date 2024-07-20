@@ -1,6 +1,10 @@
 import BugTracker_desktop from "../pictures/BugTracker_desktop.jpg";
 import BugTracker_tablet from "../pictures/BugTracker_tablet.jpg";
 import BugTracker_cellphone from "../pictures/BugTracker_cellphone.jpg";
+import KeelWorks_desktop from "../pictures/KeelWorks_desktop.jpg";
+import KeelWorks_tablet from "../pictures/KeelWorks_tablet.jpg";
+import KeelWorks_cellphone from "../pictures/KeelWorks_cellphone.jpg";
+
 // *************************
 // **  Importing Icons  ****
 // *************************
@@ -183,16 +187,16 @@ export const my_projects = [
     live_url: "https://www.keelworks.org/",
     github_url: "https://github.com/keelworks/keelworks-website.git",
     description:
-      "This website has been replaced with the old version to improve the user experience and promot about organization mission. The new organization platform .",
+      "This project is a redesign of the website for the KeelWorks organization. The new design focuses on enhancing user experience, improving navigation, and modernizing the overall look and feel of the site. As a result of these improvements, the new website significantly boosted donations for the organization, making it easier for supporters to contribute and engage with the cause.",
     techs: [
       { id: nanoid(), name: "React.js", icon: <FaReact /> },
       { id: nanoid(), name: "Tailwind CSS", icon: <SiTailwindcss /> },
       { id: nanoid(), name: "Git", icon: <FaGitAlt /> },
       { id: nanoid(), name: "GitHub", icon: <GrGithub /> },
     ],
-    pic1: BugTracker_desktop,
-    pic2: BugTracker_tablet,
-    pic3: BugTracker_cellphone,
+    pic1: KeelWorks_desktop,
+    pic2: KeelWorks_tablet,
+    pic3: KeelWorks_cellphone,
   },
 ];
 // ************ Portfolio Tech Used ***********

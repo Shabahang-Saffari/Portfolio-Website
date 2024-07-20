@@ -31,7 +31,7 @@ export const Proj = () => {
   useEffect(() => {
     let interval_id = setInterval(() => {
       next_slide();
-    }, 10000);
+    }, 20000);
     return () => {
       clearInterval(interval_id);
     };
@@ -184,6 +184,21 @@ export const Proj = () => {
         >
           <HiOutlineChevronRight />
         </motion.button>
+        <div className="slider_pagination">
+          {my_projects.map((project, project_index) => {
+            return (
+              <li
+                id={project_index}
+                className={
+                  currentProject === project_index ? "active_page" : ""
+                }
+                onClick={() => {
+                  setCurrentProject(project_index);
+                }}
+              ></li>
+            );
+          })}
+        </div>
       </div>
     </>
   );

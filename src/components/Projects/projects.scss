@@ -161,29 +161,81 @@
 //   display: none;
 //   border: 2px solid rgb(211, 226, 0) !important;
 // }
+
 .slider_btns {
   position: absolute;
   z-index: 50;
   background-color: transparent;
   border: none;
   @include flex_center;
-  color: $secondary_300;
+  color: $secondary_100;
   font-size: 5rem;
 
   :hover {
-    color: $secondary_100;
+    color: $secondary_300;
     transition: $transition;
     // transform: rotate(360deg);
   }
 }
 .prev_slide_btn {
-  top: 40%;
-  left: 8%;
+  bottom: 0;
+  left: 0;
 }
 .next_slide_btn {
-  top: 40%;
-  right: 8%;
+  bottom: 0;
+  right: 0;
 }
+
+.light_mode {
+  .slider_btns {
+    color: $tertiary-300;
+
+    :hover {
+      color: $tertiary-700;
+    }
+  }
+}
+
+.slider_pagination {
+  position: absolute;
+  right: 50%;
+  @include flex_center;
+  gap: 20px;
+  // border: 2px solid rgb(211, 226, 0) !important;
+
+  li {
+    display: block;
+    background-color: $primary_500;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    // background: $primary_100;
+    border: 2px solid $primary_300;
+    transition: $transition;
+
+    &:hover {
+      border: 2px solid $secondary_100;
+      border-radius: 0;
+      transform: rotate(180deg);
+    }
+  }
+  .active_page {
+    height: 20px;
+    width: 20px;
+    border: 2px solid $secondary_100;
+    border-radius: 0;
+    // box-shadow: 0 0 5px 1px $primary_300;
+    transition: 0.5s ease-in-out;
+    transform: rotate(315deg);
+  }
+}
+// .pagination_dots {
+//   list-style-type: none;
+//   height: 15px;
+//   width: 15px;
+//   background-color: white;
+//   border-radius: 25px;
+// }
 // ************************************
 // ************ Tablet ***************
 // ************************************
@@ -272,6 +324,21 @@
         color: $tertiary-600;
       }
     }
+  }
+
+  .prev_slide_btn {
+    bottom: auto;
+    left: auto;
+
+    top: 40%;
+    left: 8%;
+  }
+  .next_slide_btn {
+    bottom: auto;
+    left: auto;
+
+    top: 40%;
+    right: 8%;
   }
 
   @media screen and (min-height: 800px) {
