@@ -3,7 +3,7 @@ import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi2";
 
 // ********************************
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useGlobalContext } from "../../Context";
 import { my_projects } from "../data";
 import { motion } from "framer-motion";
@@ -28,6 +28,16 @@ export const Proj = () => {
   const [ProjData, setProjData] = useState();
   const [currentProject, setCurrentProject] = useState(0);
 
+  useEffect(() => {
+    let interval_id = setInterval(() => {
+      next_slide();
+    }, 10000);
+    return () => {
+      clearInterval(interval_id);
+    };
+  }, [currentProject]);
+
+  //  ********************************
   const prev_slide = () => {
     if (currentProject > 0) {
       setCurrentProject(currentProject - 1);
@@ -146,24 +156,34 @@ export const Proj = () => {
         })}
       </div>
       <div className="slider_btns_wrapper">
-        <button
+        <motion.button
           type="button"
           className="slider_btns prev_slide_btn"
           onClick={() => {
             next_slide();
           }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ type: "spring", stiffness: 250 }}
+          whileHover={{
+            scale: 3,
+          }}
         >
           <HiOutlineChevronLeft />
-        </button>
-        <button
+        </motion.button>
+        <motion.button
           type="button"
           className="slider_btns next_slide_btn"
           onClick={() => {
             prev_slide();
           }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ type: "spring", stiffness: 250 }}
+          whileHover={{
+            scale: 3,
+          }}
         >
           <HiOutlineChevronRight />
-        </button>
+        </motion.button>
       </div>
     </>
   );
