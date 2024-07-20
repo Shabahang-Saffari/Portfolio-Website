@@ -1,3 +1,8 @@
+// ************ Icons *************
+import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi2";
+
+// ********************************
+
 import { useState } from "react";
 import { useGlobalContext } from "../../Context";
 import { my_projects } from "../data";
@@ -19,8 +24,11 @@ export const Proj = () => {
     window.location.href = prj_url;
   };
 
-  // ********************************************
+  // ************ Slider *************
   const [ProjData, setProjData] = useState();
+
+  const prev_slide = () => {};
+  const next_slide = () => {};
 
   return (
     <>
@@ -111,6 +119,26 @@ export const Proj = () => {
           </div>
         );
       })}
+      <div className="slider_btns_wrapper">
+        <button
+          type="button"
+          className="slider_btns prev_slide_btn"
+          onClick={() => {
+            next_slide();
+          }}
+        >
+          <HiOutlineChevronLeft />
+        </button>
+        <button
+          type="button"
+          className="slider_btns next_slide_btn"
+          onClick={() => {
+            prev_slide();
+          }}
+        >
+          <HiOutlineChevronRight />
+        </button>
+      </div>
     </>
   );
 };
