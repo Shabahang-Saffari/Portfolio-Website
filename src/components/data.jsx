@@ -171,6 +171,7 @@ export const my_projects = [
       { id: nanoid(), name: "Javascript", icon: <RiJavascriptFill /> },
       { id: nanoid(), name: "CSS", icon: <FaCss3Alt /> },
       { id: nanoid(), name: "HTML", icon: <FaHtml5 /> },
+      { id: nanoid(), name: "Git", icon: <FaGitAlt /> },
     ],
     pic1: BugTracker_desktop,
     pic2: BugTracker_tablet,
