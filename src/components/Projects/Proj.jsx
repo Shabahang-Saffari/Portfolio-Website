@@ -10,7 +10,13 @@ import { motion } from "framer-motion";
 import { DiVim } from "react-icons/di";
 
 export const Proj = () => {
-  const { hover_btns, hover_btns_exit } = useGlobalContext();
+  const {
+    hover_btns,
+    hover_btns_exit,
+    hover_on_scroll_bar,
+    exit_scroll_bar_hover,
+  } = useGlobalContext();
+
   const links_cursor_hover_handler = () => {
     hover_btns();
   };
@@ -184,7 +190,11 @@ export const Proj = () => {
         >
           <HiOutlineChevronRight />
         </motion.button>
-        <div className="slider_pagination">
+        <div
+          onMouseOver={hover_on_scroll_bar}
+          onMouseLeave={exit_scroll_bar_hover}
+          className="slider_pagination"
+        >
           {my_projects.map((project, project_index) => {
             return (
               <motion.li
