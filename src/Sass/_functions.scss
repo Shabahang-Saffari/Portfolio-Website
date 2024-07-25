@@ -6,6 +6,12 @@
   align-items: center;
 }
 
+@mixin flex_start() {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
 // *********** Theme Mode **************
 @mixin theme_mode($light-theme: true) {
   @if $light-theme {

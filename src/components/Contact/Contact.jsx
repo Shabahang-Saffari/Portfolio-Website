@@ -8,15 +8,7 @@ import { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Footer from "./Footer";
 
-// const button_variants = {
-//   hover: {
-//     y: [5, 0, 5],
-//     // textShadow: "0px 0px 10px rgb(255,255,255)",
-//     transition: {
-//       y: { repeat: Infinity, duration: 1.5 },
-//     },
-//   },
-// };
+import { social_links } from "../data";
 
 const Contact = () => {
   const my_form_ref = useRef();
@@ -24,8 +16,14 @@ const Contact = () => {
   const user_email_ref = useRef();
   const user_msg_ref = useRef();
 
-  const { hover_on_available, exit_available_hover, dark_mode, activate_page } =
-    useGlobalContext();
+  const {
+    hover_on_available,
+    exit_available_hover,
+    dark_mode,
+    activate_page,
+    hover_on_scroll_bar,
+    exit_scroll_bar_hover,
+  } = useGlobalContext();
 
   // **************   Send btn Effect  ***************
 
@@ -159,6 +157,30 @@ const Contact = () => {
             </motion.button>
           </div>
         </form>
+        <div
+          className="social_links_container"
+          onMouseOver={hover_on_scroll_bar}
+          onMouseLeave={exit_scroll_bar_hover}
+        >
+          {social_links.map((link) => {
+            const { id, name, url, icon } = link;
+            return (
+              <motion.a
+                className="social_links"
+                key={id}
+                href={url}
+                transition={{ type: "spring", stiffness: 300 }}
+                whileHover={{
+                  scale: 1.2,
+                  x: 8,
+                  y: -8,
+                }}
+              >
+                {icon}
+              </motion.a>
+            );
+          })}
+        </div>
       </div>
       <Footer />
     </div>

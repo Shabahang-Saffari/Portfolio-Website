@@ -69,15 +69,15 @@ export const inner_links = [
 export const social_links = [
   {
     id: nanoid(),
-    name: "Linkedin",
-    url: "https://www.linkedin.com/in/shabahang-saffari",
-    icon: <FaLinkedin />,
-  },
-  {
-    id: nanoid(),
     name: "GitHub",
     url: "https://www.github.com/Shabahang-Saffari",
     icon: <GrGithub />,
+  },
+  {
+    id: nanoid(),
+    name: "Linkedin",
+    url: "https://www.linkedin.com/in/shabahang-saffari",
+    icon: <FaLinkedin />,
   },
 ];
 

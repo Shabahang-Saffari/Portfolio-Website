@@ -15,19 +15,35 @@
   position: relative;
   overflow: hidden;
   scroll-margin: 6rem;
-  // scroll-snap-align: end;
   font-family: "Roboto", sans-serif;
   color: $primary_300;
   letter-spacing: 1px;
 
-  height: calc(100vh - 6rem); //Just in case the "svh" is not supported!
-  // height: calc(100svh - 6rem);
+  height: 100%;
 
   margin-top: 20rem;
   padding: 2rem 0;
   transition: $transition;
   // border: 2px solid rgb(211, 226, 0) !important;
 }
+
+// .contact_page_wrapper {
+//   position: relative;
+//   overflow: hidden;
+//   scroll-margin: 6rem;
+//   // scroll-snap-align: end;
+//   font-family: "Roboto", sans-serif;
+//   color: $primary_300;
+//   letter-spacing: 1px;
+
+//   height: calc(100vh - 6rem); //Just in case the "svh" is not supported!
+//   // height: calc(100svh - 6rem);
+
+//   margin-top: 20rem;
+//   padding: 2rem 0;
+//   transition: $transition;
+//   // border: 2px solid rgb(211, 226, 0) !important;
+// }
 
 .contact_page_content {
   overflow: hidden;
@@ -162,6 +178,34 @@ textarea {
   }
 }
 
+.social_links_container {
+  width: 100%;
+  @include flex_center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  // border: 2px solid rgb(211, 226, 0) !important;
+}
+.social_links {
+  @include flex_center;
+  font-size: 2rem;
+  color: $primary_300;
+  // border: 2px solid rgb(211, 226, 0) !important;
+
+  &:hover {
+    color: $secondary_100;
+  }
+}
+
+.light_mode .social_links {
+  color: $primary_500;
+
+  &:hover {
+    color: $tertiary-300;
+  }
+}
+
 // ****************************************
 // ************    Tablet   **************
 // ****************************************
@@ -177,6 +221,19 @@ textarea {
     height: calc(100svh - 6rem);
     width: 85%;
 
+    // border: 2px solid rgb(211, 226, 0) !important;
+  }
+  .social_links_container {
+    width: 100%;
+    @include flex_start;
+    gap: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    // border: 2px solid rgb(211, 226, 0) !important;
+  }
+  .social_links {
+    font-size: 3rem;
     // border: 2px solid rgb(211, 226, 0) !important;
   }
 }
@@ -297,5 +354,14 @@ textarea {
       background: transparent;
       // border: 2px solid rgb(211, 226, 0) !important;
     }
+  }
+  .social_links_container {
+    gap: 1rem;
+    margin-bottom: 4rem;
+    // border: 2px solid rgb(211, 226, 0) !important;
+  }
+  .social_links {
+    font-size: 2rem;
+    // border: 2px solid rgb(211, 226, 0) !important;
   }
 }
