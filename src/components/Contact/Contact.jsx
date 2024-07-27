@@ -157,16 +157,14 @@ const Contact = () => {
             </motion.button>
           </div>
         </form>
-        <div
-          className="social_links_container"
-          onMouseOver={hover_on_scroll_bar}
-          onMouseLeave={exit_scroll_bar_hover}
-        >
+        <div className="social_links_container">
           {social_links.map((link) => {
             const { id, name, url, icon } = link;
             return (
               <motion.a
                 className="social_links"
+                onMouseOver={hover_on_scroll_bar}
+                onMouseLeave={exit_scroll_bar_hover}
                 key={id}
                 href={url}
                 transition={{ type: "spring", stiffness: 300 }}
