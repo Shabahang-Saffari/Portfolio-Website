@@ -160,7 +160,7 @@
 
 .slider_btns {
   position: absolute;
-  z-index: 50;
+  z-index: 10;
   background-color: transparent;
   border: none;
   @include flex_center;

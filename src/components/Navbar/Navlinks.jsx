@@ -43,7 +43,8 @@ const Navlinks = () => {
           </motion.li>
         );
       })}
-      {social_links.map((link) => {
+      {/* *************** Github & Linkedin Links *********** */}
+      {/* {social_links.map((link) => {
         return (
           <motion.li
             key={link.id}
@@ -65,7 +66,7 @@ const Navlinks = () => {
             </a>
           </motion.li>
         );
-      })}
+      })} */}
     </motion.ul>
   );
 };
