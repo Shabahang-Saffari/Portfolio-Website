@@ -26,17 +26,17 @@ const AboutMe = () => {
           <div className="about_me_section">
             <h4 className="page_title">About Me</h4>
             <p>
-              My name is Shabahang. I am a passionate individual with a keen
-              interest in coding and the art of crafting clean and efficient
-              code. I believe in the power of technology to create elegant
-              solutions, and I am always eager to explore new challenges in the
-              world of coding.
+              I am a hard working and passionate individual with a keen interest
+              in coding and the art of crafting clean and efficient code. I
+              believe in the power of technology to create elegant solutions,
+              and I am always eager to explore new challenges in the world of
+              coding.
             </p>
           </div>
           <div className="work_experience">
             <h4>Work Experience</h4>
             <ul>
-              <li>Full Stack Developer, KeelWorks</li>
+              <li>Lead Full Stack Developer, KeelWorks</li>
               <p>Washington, United States, March 2024 - Current</p>
             </ul>
           </div>

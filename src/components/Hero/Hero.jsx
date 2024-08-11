@@ -63,10 +63,10 @@ const Hero = () => {
             <p>
               Transforming lines of code into innovative solutions.
               <small>
-                I am a detail-oriented developer dedicated to crafting seamless
-                user experiences and scalable applications, actively seeking new
-                challenges and opportunities to grow, innovate, and create a
-                lasting impact.
+                My name is Shabahang Saffari. I am a detail-oriented software
+                developer dedicated to crafting seamless user experiences and
+                scalable applications, actively seeking new challenges and
+                opportunities to grow, innovate, and create a lasting impact.
               </small>
             </p>
             <div className="curlies">{"}"}</div>
