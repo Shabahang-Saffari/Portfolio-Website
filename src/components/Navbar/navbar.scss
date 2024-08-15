@@ -173,9 +173,9 @@
   .available_status {
     display: inline-block;
     color: inherit;
-    &:hover {
-      font-weight: $font_weight6;
-    }
+    // &:hover {
+    //   font-weight: $font_weight6;
+    // }
   }
 
   .light_mode .available_status {
