@@ -43,15 +43,15 @@ const AboutMe = () => {
           <div className="education_section">
             <h4>Education</h4>
             <ul>
-              <li>Bachelor of Computer Software Engineering</li>
+              <li>Bachelor of Science in Computer Software Engineering</li>
               <p>May 2012, Islamic Azad University, Tehran, Iran</p>
-              <li>Master of Computer Music</li>
+              <li>Master of Music</li>
               <p>January 2019, University of Victoria, Victoria, BC, Canada</p>
               <li>Python Programming (Grade A)</li>
               <p>Fall 2022, BCIT, BC, Canada </p>
-              <li>NodeJS</li>
+              <li>Node.js (comperehensive back-end course)</li>
               <p>Udemy Certificate, 2023</p>
-              <li>React</li>
+              <li>React (comprehensive front-end course)</li>
               <p>Udemy Certificate, 2024</p>
             </ul>
           </div>
