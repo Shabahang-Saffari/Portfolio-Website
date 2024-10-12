@@ -47,12 +47,12 @@ const AboutMe = () => {
               <p>May 2012, Islamic Azad University, Tehran, Iran</p>
               <li>Master of Music</li>
               <p>January 2019, University of Victoria, Victoria, BC, Canada</p>
-              <li>Python Programming (Grade A)</li>
-              <p>Fall 2022, BCIT, BC, Canada </p>
               <li>Node.js (comperehensive back-end course)</li>
               <p>Udemy Certificate, 2023</p>
               <li>React (comprehensive front-end course)</li>
               <p>Udemy Certificate, 2024</p>
+              <li>Python Programming (Grade A)</li>
+              <p>Fall 2022, BCIT, BC, Canada </p>
             </ul>
           </div>
         </div>
