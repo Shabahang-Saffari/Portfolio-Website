@@ -39,14 +39,18 @@ const AboutMe = () => {
               <li>Lead Full Stack Developer, KeelWorks</li>
               <p>Washington, United States, March 2024 - Current</p>
             </ul>
+            <ul>
+              <li>Technical Sales Supervisor, London Drugs LTD</li>
+              <p>Burnaby, BC, Canada, March 2020 - Current</p>
+            </ul>
           </div>
           <div className="education_section">
             <h4>Education</h4>
             <ul>
+              <li>Master of Music in Computer Music</li>
+              <p>University of Victoria, Victoria, BC, Canada</p>
               <li>Bachelor of Science in Computer Software Engineering</li>
-              <p>May 2012, Islamic Azad University, Tehran, Iran</p>
-              <li>Master of Music</li>
-              <p>January 2019, University of Victoria, Victoria, BC, Canada</p>
+              <p>Islamic Azad University, Tehran, Iran</p>
               <li>Node.js (comperehensive back-end course)</li>
               <p>Udemy Certificate, 2023</p>
               <li>React (comprehensive front-end course)</li>
