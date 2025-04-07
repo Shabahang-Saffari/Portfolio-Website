@@ -47,7 +47,7 @@ const AboutMe = () => {
           <div className="education_section">
             <h4>Education</h4>
             <ul>
-              <li>Master of Music in Computer Music</li>
+              <li>Master of Music</li>
               <p>University of Victoria, Victoria, BC, Canada</p>
               <li>Bachelor of Science in Computer Software Engineering</li>
               <p>Islamic Azad University, Tehran, Iran</p>
