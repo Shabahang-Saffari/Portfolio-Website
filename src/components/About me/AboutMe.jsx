@@ -40,7 +40,7 @@ const AboutMe = () => {
               <p>Washington, United States, March 2024 - Current</p>
             </ul>
             <ul>
-              <li>Technical Sales Supervisor, London Drugs LTD</li>
+              <li>Sales Supervisor, London Drugs LTD</li>
               <p>Burnaby, BC, Canada, March 2020 - Current</p>
             </ul>
           </div>
